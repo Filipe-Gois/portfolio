@@ -1,30 +1,32 @@
-"use client";
+// "use client";
 import { useEffect, useState } from "react";
 import "./style.css";
 
 const ThemeToggle = () => {
   const [theme, setTheme] = useState<string>(() => {
-    // Verifica se o tema já está armazenado no localStorage
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-      return savedTheme;
-    }
+    // // Verifica se o tema já está armazenado no localStorage
+    // const savedTheme = localStorage.getItem("theme");
+    // if (savedTheme) {
+    //   return savedTheme;
+    // }
 
-    // Se não houver tema salvo, verifica o tema do dispositivo
-    const prefersDarkMode = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-    return prefersDarkMode ? "dark" : "light";
+    // // Se não houver tema salvo, verifica o tema do dispositivo
+    // const prefersDarkMode = window.matchMedia(
+    //   "(prefers-color-scheme: dark)"
+    // ).matches;
+    // return prefersDarkMode ? "dark" : "light";
+
+    return "dark";
   });
 
   useEffect(() => {
     // Aplica o tema no <html>
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
+      // localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
+      // localStorage.setItem("theme", "light");
     }
   }, [theme]);
 
