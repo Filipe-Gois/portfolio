@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "../Styles/globals.css";
 import { Inter } from "next/font/google";
-import Header from "@/Components/Header";
+import Header from "@/components/Header";
+import { cn } from "@/lib/utils";
 
 const inter = Inter({
   weight: ["400", "700"],
@@ -22,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${inter.className} antialiased`}>
+      <body className={cn(`antialiased`, inter.className)}>
         <Header />
         {children}
       </body>

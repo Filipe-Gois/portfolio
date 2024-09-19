@@ -1,13 +1,14 @@
-import Image from "next/image";
-import ImageFilipe from "@/public/Images/Filipe.jpeg";
+import ImageFilipe from "../../../../public/Images/Filipe.jpeg";
 import { MapPin, Linkedin, Github } from "lucide-react";
 import "./style.css";
+import CvButtonDownloader from "@/components/CvButtonDownloader";
+import ImageComponent from "@/components/Image";
 
 const WelcomeText = () => {
   return (
     <section className="w-full h-max flex flex-col items-center">
-      <Image
-        className="primary-image mt-10 p-[6px] border-lightScheme-tertiary border-x-8 border-b-8 border-opacity-45 relative before:absolute after:h-[80%] before:h-[80%] after:absolut  "
+      <ImageComponent
+        className="primary-image p-[6px] border-lightScheme-tertiary border-x-8 border-b-8 border-opacity-45 relative before:absolute after:h-[80%] before:h-[80%] after:absolut  "
         src={ImageFilipe}
         // layout="responsive"
         alt={"Imagem de Filipe Góis, dono do portfólio."}
@@ -27,14 +28,7 @@ const WelcomeText = () => {
           possimus pariatur!
         </p>
 
-        <a
-          href="../../../public/Documents/curriculo_filipe_gois.pdf"
-          download="curriculo_filipe_gois.pdf"
-        >
-          <button className="rounded bg-darkScheme-primary dark:bg-lightScheme-primary w-max p-2 mt-3">
-            Baixar Currículo
-          </button>
-        </a>
+        <CvButtonDownloader />
 
         <div className="mt-8 flex flex-col gap-2">
           <label className="text-darkScheme-primary dark:text-lightScheme-primary flex gap-1">
