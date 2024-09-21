@@ -8,7 +8,7 @@ import { TitleAnimated } from "@/components/Title";
 const WelcomeText = () => {
   return (
     <section className="w-full h-max flex flex-col items-center md:flex-row-reverse">
-      <div className="h-full w-3/5 lg:w-3/5 xl:w-2/5">
+      <div className="h-full w-4/5 lg:w-3/5 xl:w-2/5">
         <ImageComponent
           className="primary-image p-[6px] border-lightScheme-tertiary border-x-8 border-b-8 border-opacity-45 md:border-l-0 md:border-b-[26px] md:border-r-[26px]"
           src={ImageFilipe}
