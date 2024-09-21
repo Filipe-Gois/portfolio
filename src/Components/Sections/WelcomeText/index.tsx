@@ -21,11 +21,11 @@ const WelcomeText = () => {
       <div className="flex w-full flex-col gap-1 mt-8 md:mt-0">
         <TitleAnimated />
 
-        <p className="dark:text-lightScheme-tertiary text-darkScheme-primary text-justify text-sm md:max-w-[85%] lg:text-base mt-2">
+        <p className="paragraph mt-2">
           Sou um desenvolvedor Full-Stack com foco em{" "}
           <strong className="italic">mobile</strong>, sempre em busca de
           aprimorar cada detalhe do meu código. Minha paixão por tecnologia vai
-          além das telas: estou constantemente explorando novas linguagens e
+          além das telas. Estou constantemente explorando novas linguagens e
           ferramentas, como o <strong className="italic">Dart e Flutter</strong>
           , tendo experiência também em
           <strong className="italic"> React Native</strong>. Acredito que o

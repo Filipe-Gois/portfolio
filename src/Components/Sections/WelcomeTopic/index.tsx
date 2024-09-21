@@ -7,8 +7,8 @@ const WelcomeTopic = () => {
     <section className="w-full h-full flex flex-col items-center">
       <Tag title="Sobre mim" />
 
-      <div className="mt-8 w-4/5">
-        <div className="">
+      <div className="mt-8 w-full flex flex-col md:flex-row justify-between items-center h-full">
+        <div className="h-full w-4/5 md:w-full lg:w-2/5 xl:w-2/5 2xl:w-2/6">
           <ImageComponent
             className="p-[6px] border-lightScheme-tertiary border-x-8 border-b-8 border-opacity-45 md:border-l-[26px] md:border-b-[26px] md:border-r-0"
             src={ImageFilipe}
@@ -19,21 +19,41 @@ const WelcomeTopic = () => {
           />
         </div>
 
-        <div className="mt-8 flex flex-col gap-6">
-          <h1>Curioso sobre mim ?</h1>
-          <p className="text-justify">
+        <div className="mt-8 flex md:items-end flex-col gap-6 md:max-w-[50%] w-full md:mt-0">
+          <h1 className="dark:text-lightScheme-primary text-darkScheme-primary text-2xl lg:text-4xl">
+            Curioso sobre mim ?
+          </h1>
+          <p className="paragraph">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non eius
             ipsa nisi beatae minima, ullam quas qui recusandae facere ducimus!
             Similique deleniti nihil error nostrum ipsum fugiat sit excepturi
             quasi?
           </p>
-          <p className="text-justify">
+          <p className="paragraph">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non eius
             ipsa nisi beatae minima, ullam quas qui recusandae facere ducimus!
             Similique deleniti nihil error nostrum ipsum fugiat sit excepturi
             quasi?
           </p>
-          <p className="text-justify">
+          <p className="paragraph">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non eius
+            ipsa nisi beatae minima, ullam quas qui recusandae facere ducimus!
+            Similique deleniti nihil error nostrum ipsum fugiat sit excepturi
+            quasi?
+          </p>
+          <p className="paragraph">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non eius
+            ipsa nisi beatae minima, ullam quas qui recusandae facere ducimus!
+            Similique deleniti nihil error nostrum ipsum fugiat sit excepturi
+            quasi?
+          </p>
+          <p className="paragraph">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non eius
+            ipsa nisi beatae minima, ullam quas qui recusandae facere ducimus!
+            Similique deleniti nihil error nostrum ipsum fugiat sit excepturi
+            quasi?
+          </p>
+          <p className="paragraph">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non eius
             ipsa nisi beatae minima, ullam quas qui recusandae facere ducimus!
             Similique deleniti nihil error nostrum ipsum fugiat sit excepturi

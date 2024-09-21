@@ -127,3 +127,7 @@ body {
   background-color: #0acc82;
   color: var(--primary);
 }
+
+.paragraph {
+  @apply dark:text-lightScheme-tertiary text-darkScheme-primary text-justify text-sm md:max-w-[85%] lg:text-base;
+}

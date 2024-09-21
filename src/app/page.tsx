@@ -3,7 +3,7 @@ import WelcomeTopic from "@/components/Sections/WelcomeTopic";
 
 export default function Home() {
   return (
-    <main className="h-screen w-full mt-14">
+    <main className="h-full w-full mt-14">
       <div className="dark:bg-darkScheme-primary bg-lightScheme-primary w-full flex justify-center py-10">
         <div className="flex h-full w-[85vw] flex-col items-center">
           <WelcomeText />
