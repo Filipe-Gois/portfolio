@@ -12,9 +12,17 @@ type ImageProps = {
   height: number | `${number}`;
   alt: string;
   className: string;
+  layout: string;
 };
 
-const ImageComponent = ({ alt, className, height, src, width }: ImageProps) => {
+const ImageComponent = ({
+  alt,
+  className,
+  height,
+  src,
+  width,
+  layout,
+}: ImageProps) => {
   return (
     <Image
       className={ImageStyle({ className })}
@@ -22,6 +30,7 @@ const ImageComponent = ({ alt, className, height, src, width }: ImageProps) => {
       alt={alt}
       width={width}
       height={height}
+      layout={layout}
     />
   );
 };

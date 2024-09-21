@@ -1,13 +1,16 @@
 const Logo = () => {
-  const linkLinkedin = `https://www.linkedin.com/in/filipe-góis-841b58206/`;
+  const goToTopPage = () =>
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   return (
-    <a
-      target="_blank"
-      href={linkLinkedin}
+    <button
+      onClick={goToTopPage}
       className="text-darkScheme-primary dark:text-lightScheme-primary text-xl font-semibold transition-all ease-in-out duration-500 hover:scale-110"
     >
       {"<"}Filipe Góis {"/>"}
-    </a>
+    </button>
   );
 };
 
