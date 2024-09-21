@@ -115,3 +115,15 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Alterando a cor do texto e fundo ao selecionar */
+::selection {
+  color: var(--primary); /* Cor de fundo */
+  background-color: #0acc82; /* Cor do texto */
+}
+
+/* Para navegadores compatíveis com Firefox */
+::-moz-selection {
+  background-color: #0acc82;
+  color: var(--primary);
+}

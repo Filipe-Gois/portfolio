@@ -27,7 +27,7 @@ const WelcomeText = () => {
           aprimorar cada detalhe do meu código. Minha paixão por tecnologia vai
           além das telas: estou constantemente explorando novas linguagens e
           ferramentas, como o <strong className="italic">Dart e Flutter</strong>
-          , e também tenho experiência em
+          , tendo experiência também em
           <strong className="italic"> React Native</strong>. Acredito que o
           aprendizado contínuo é a chave para a excelência. Atualmente, estou
           treinando para{" "}
@@ -56,14 +56,14 @@ const WelcomeText = () => {
             href="https://github.com/Filipe-Gois/"
             target="_blank"
           >
-            <Github size={18} />
+            <Github className="size-8" size={18} />
           </a>
           <a
             className="hover:scale-125 transition-all ease-in-out duration-500 cursor-pointer"
             href="https://www.linkedin.com/in/filipe-góis-841b58206/"
             target="_blank"
           >
-            <Linkedin size={18} />
+            <Linkedin className="size-8" size={18} />
           </a>
           <a
             className="hover:scale-125 transition-all ease-in-out duration-500 cursor-pointer"
