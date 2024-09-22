@@ -15,7 +15,7 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
       <div className="dark:bg-lightScheme-tertiary bg-darkScheme-tertiary !bg-opacity-10 dark:!bg-opacity-30  rounded-t-xl p-5 md:w-1/2 md:flex md:!items-center md:justify-center">
         <ImageComponent
           alt={project.image.alt}
-          className={`rounded-3xl border-y-8 border-none md:max-h-[100%] md:max-w-[100%] lg:max-w-[80%] xl:max-w-[60%] 2xl:max-w-[50%]`}
+          className={`rounded-3xl border-y-8 border-none md:max-h-[100%] md:max-w-[100%] lg:max-w-[80%] 2xl:max-w-[85%]`}
           src={project.image.src}
           layout="responsive"
         />
