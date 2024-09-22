@@ -71,6 +71,8 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
 
+    --backGround: #f9f9fa;
+
     --primary: #ffffff;
     --secondary: #f9f9fa;
     --tertiary: #e6e8eb;
@@ -101,6 +103,7 @@ body {
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
 
+    --backGround: #030712;
     --primary: #030712;
     --secondary: #111827;
     --tertiary: #374151;

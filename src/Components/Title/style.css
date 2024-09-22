@@ -17,7 +17,7 @@
   opacity: 1;
   animation: cursor 20s infinite, digitacao 20s steps(15) infinite;
   width: calc(100% + 15px);
-  background-color: var(--primary);
+  background-color: var(--backGround);
 }
 
 @keyframes digitacao {
