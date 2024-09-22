@@ -12,10 +12,11 @@
   content: "";
   position: absolute;
   height: 110%;
+  max-height: 40px;
   border-left: 2px solid #0acc82;
   right: -10px;
   opacity: 1;
-  animation: cursor 20s infinite, digitacao 20s steps(15) infinite;
+  animation: cursor 10s infinite, digitacao 20s steps(15) infinite;
   width: calc(100% + 15px);
   background-color: var(--backGround);
 }
@@ -64,11 +65,11 @@
   }
   41%,
   60% {
-    content: "Estudando para a WorldSkills";
+    content: "Estou estudando para a WorldSkills";
   }
   61%,
   80% {
-    content: "Aprendendo Flutter.";
+    content: "Aprendendo Flutter";
   }
   81%,
   100% {

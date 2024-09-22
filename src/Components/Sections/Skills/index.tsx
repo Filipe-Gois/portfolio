@@ -1,9 +1,81 @@
+"use client";
+import SkillIcon from "@/components/SkillIcon";
+import { Slide, Slider } from "@/components/Slider";
 import Tag from "@/components/Tag";
+import { SkillName } from "@/Types";
+import { useEffect, useState } from "react";
 
 const Skills = () => {
+  const skills: SkillName[] = [
+    // "Flutter",
+    "React Native",
+    "Dart",
+    "TypeScript",
+    "JavaScript",
+    "Next.JS",
+    "React.JS",
+    "HTML5",
+    "CSS3",
+    "SASS",
+    "TailWindCss",
+    "Figma",
+    "C#",
+    "SQL Server",
+    "MongoDB",
+    "Git",
+    "Azure DevOps",
+    "Microsoft Azure",
+    "Trello",
+  ];
+
+  const uniqueSkills = new Set<SkillName>(skills);
+
+  const [settingsSlides, setSettingsSlides] = useState({
+    spaceBetween: 0,
+    slidesPerView: 5,
+    autoplay: {
+      delay: 2500,
+    },
+    navigation: true,
+    pagination: {
+      clickable: true,
+      dynamicBullets: true,
+    },
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setSettingsSlides({ ...settingsSlides, slidesPerView: 1 });
+      } else {
+        setSettingsSlides({ ...settingsSlides, slidesPerView: 3 });
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <section className="w-full h-[1200px] flex flex-col items-center">
+    <section className="w-full h-full flex flex-col items-center">
       <Tag title="Tecnologias" />
+
+      <div className="w-full h-full mt-16">
+        <Slider className="" settings={settingsSlides}>
+          {Array.from(uniqueSkills).map((skill, index) => {
+            return (
+              <Slide className="!flex !justify-around " key={index}>
+                <SkillIcon icon={skill} />
+              </Slide>
+            );
+          })}
+        </Slider>
+      </div>
     </section>
   );
 };

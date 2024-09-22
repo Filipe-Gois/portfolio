@@ -1,7 +1,6 @@
 import Link from "next/link";
 import ThemeToggle from "../ThemeToggle";
-import { FaUserAlt } from "react-icons/fa";
-import { FaCode } from "react-icons/fa";
+import { FaUserAlt, FaBriefcase, FaCode } from "react-icons/fa";
 import { FaFolderOpen } from "react-icons/fa6";
 import { IoIosSend } from "react-icons/io";
 
@@ -31,6 +30,11 @@ const NavBar = ({ isNavbarVisible }: NavBarProps) => {
         <li className="nav-item">
           <Link href={""} className="nav-link">
             Projetos <FaFolderOpen className="md:hidden" size={20} />
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link href={""} className="nav-link">
+            Serviços <FaBriefcase className="md:hidden" size={20} />
           </Link>
         </li>
         <li className="nav-item">

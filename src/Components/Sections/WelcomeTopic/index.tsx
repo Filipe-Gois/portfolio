@@ -21,9 +21,9 @@ const WelcomeTopic = () => {
         </div>
 
         <div className="mt-4 flex md:items-end flex-col gap-6 md:max-w-[50%] w-full md:mt-0">
-          <h1 className="dark:text-lightScheme-primary text-darkScheme-primary text-2xl lg:text-4xl">
+          <h2 className="dark:text-lightScheme-primary text-darkScheme-primary text-2xl lg:text-4xl">
             Quer saber mais sobre mim ?
-          </h1>
+          </h2>
           <p className="paragraph">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non eius
             ipsa nisi beatae minima, ullam quas qui recusandae facere ducimus!

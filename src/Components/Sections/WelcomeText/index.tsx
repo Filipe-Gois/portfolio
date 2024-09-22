@@ -1,5 +1,6 @@
 import ImageFilipe from "../../../../public/Images/Filipe.jpeg";
-import { MapPin, Linkedin, Github } from "lucide-react";
+import { MapPin, Github } from "lucide-react";
+import { FaLinkedin } from "react-icons/fa";
 import "./style.css";
 import CvButtonDownloader from "@/components/CvButtonDownloader";
 import ImageComponent from "@/components/Image";
@@ -52,18 +53,18 @@ const WelcomeText = () => {
 
         <div className="text-darkScheme-primary dark:text-lightScheme-primary flex gap-2 mt-8 w-max">
           <a
-            className="hover:scale-125 transition-all ease-in-out duration-500 cursor-pointer"
+            className="hover:text-complementary-lightGreen hover:scale-125 transition-all ease-in-out duration-500 cursor-pointer"
             href="https://github.com/Filipe-Gois/"
             target="_blank"
           >
             <Github className="size-8" size={18} />
           </a>
           <a
-            className="hover:scale-125 transition-all ease-in-out duration-500 cursor-pointer"
+            className="hover:text-complementary-lightGreen hover:scale-125 transition-all ease-in-out duration-500 cursor-pointer"
             href="https://www.linkedin.com/in/filipe-góis-841b58206/"
             target="_blank"
           >
-            <Linkedin className="size-8" size={18} />
+            <FaLinkedin className="size-8" size={18} />
           </a>
           <a
             className="hover:scale-125 transition-all ease-in-out duration-500 cursor-pointer"

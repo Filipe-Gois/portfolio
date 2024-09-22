@@ -1,7 +1,7 @@
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 import { tv } from "tailwind-variants";
 import "./style.css";
+import { ImageType } from "@/Types";
 
 const ImageStyle = tv({
   base: `primary-image p-[6px] border-lightScheme-tertiary border-x-8 border-b-8 border-opacity-45 relative before:absolute after:h-[80%] before:h-[80%] after:absolute`,
@@ -12,16 +12,6 @@ const ImageStyle = tv({
   },
 });
 
-type ImageProps = {
-  src: string | StaticImport;
-  width: number | `${number}`;
-  height: number | `${number}`;
-  alt: string;
-  className: string;
-  layout: string;
-  isFloat?: boolean;
-};
-
 const ImageComponent = ({
   alt,
   className,
@@ -30,7 +20,7 @@ const ImageComponent = ({
   width,
   layout,
   isFloat = false,
-}: ImageProps) => {
+}: ImageType) => {
   return (
     <Image
       className={`${ImageStyle({ isFloat })} ${className} `}
@@ -51,7 +41,7 @@ export const ImageFlip = ({
   width,
   layout,
   isFloat = false,
-}: ImageProps) => (
+}: ImageType) => (
   <ImageComponent
     alt={alt}
     className={className}
