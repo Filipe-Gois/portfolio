@@ -24,7 +24,6 @@ const Projects = () => {
       image: {
         alt: "Imagem da tela de login do aplicativo móvel FitTrack.",
         src: FitTrack,
-        layout: "responsive",
       },
     },
     {
@@ -42,7 +41,6 @@ const Projects = () => {
       image: {
         alt: "teste",
         src: ImageFilipe,
-        layout: "responsive",
       },
       urlRepository: "",
       title: "teste",
@@ -64,7 +62,6 @@ const Projects = () => {
       image: {
         alt: "teste",
         src: ImageFilipe,
-        layout: "responsive",
       },
       urlRepository: "",
       title: "teste",

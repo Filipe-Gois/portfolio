@@ -13,7 +13,6 @@ const WelcomeText = () => {
         <ImageComponent
           className="primary-image p-[6px] border-lightScheme-tertiary border-x-8 border-b-8 border-opacity-45 md:border-l-0 md:border-b-[26px] md:border-r-[26px]"
           src={ImageFilipe}
-          layout="responsive"
           alt={"Imagem de Filipe Góis, dono do portfólio."}
           width={150}
           height={250}

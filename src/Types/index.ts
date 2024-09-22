@@ -18,7 +18,6 @@ export type ImageType = {
   height?: number | `${number}`;
   alt: string;
   className?: string;
-  layout?: string;
   isFloat?: boolean;
 };
 

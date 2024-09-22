@@ -18,7 +18,6 @@ const ImageComponent = ({
   height,
   src,
   width,
-  layout,
   isFloat = false,
 }: ImageType) => {
   return (
@@ -28,7 +27,6 @@ const ImageComponent = ({
       alt={alt}
       width={width}
       height={height}
-      layout={layout}
     />
   );
 };
@@ -39,7 +37,6 @@ export const ImageFlip = ({
   height,
   src,
   width,
-  layout,
   isFloat = false,
 }: ImageType) => (
   <ImageComponent
@@ -47,7 +44,6 @@ export const ImageFlip = ({
     className={className}
     height={height}
     src={src}
-    layout={layout}
     width={width}
     isFloat={isFloat}
   />

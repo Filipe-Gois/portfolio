@@ -17,7 +17,6 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
           alt={project.image.alt}
           className={`rounded-3xl border-y-8 border-none md:max-h-[100%] md:max-w-[100%] lg:max-w-[80%] 2xl:max-w-[85%]`}
           src={project.image.src}
-          layout="responsive"
         />
       </div>
       <div className="p-5 md:w-1/2">
