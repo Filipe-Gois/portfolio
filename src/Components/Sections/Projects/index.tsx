@@ -1,12 +1,17 @@
+"use client";
 import ProjectCard from "@/components/Cards";
 import Tag from "@/components/Tag";
 import { ProjectType } from "@/Types";
 import ImageFilipe from "/public/Images/Filipe.jpeg";
-import FitTrack from "/public/Images/Projects/fittrack-logo.png";
+import FitTrack from "/public/Images/Projects/FitTrack/fittrack-logo.png";
+import EventPlus from "/public/Images/Projects/EventPlus/eventplus-logo.png";
+import VitalHub from "/public/Images/Projects/VitalHub/vitalhub-logo.png";
+import { useState } from "react";
 
 const Projects = () => {
   const projects: ProjectType[] = [
     {
+      urlVideoApplication: "",
       urlRepository: "https://github.com/Filipe-Gois/FitTrack",
       title: "FitTrack",
       description:
@@ -14,11 +19,12 @@ const Projects = () => {
       skills: [
         "React Native",
         "JavaScript",
+        "Styled Components",
         "C#",
         "Microsoft Azure",
-        "Git",
         "SQL Server",
         "Trello",
+        "Git",
         "Figma",
       ],
       image: {
@@ -27,50 +33,53 @@ const Projects = () => {
       },
     },
     {
-      urlDeploy: "ASDASD",
+      urlVideoApplication: "",
       skills: [
-        "C#",
-        "Dart",
-        "Azure DevOps",
-        "CSS3",
-        "Figma",
-        "Git",
         "React Native",
+        "Styled Components",
+        "C#",
+        "SQL Server",
+        "Trello",
+        "Git",
+        "Figma",
         "Microsoft Azure",
       ],
       image: {
-        alt: "teste",
-        src: ImageFilipe,
+        alt: "Logo do projeto Vital Hub.",
+        src: VitalHub,
       },
-      urlRepository: "",
-      title: "teste",
+      urlRepository: "https://github.com/Filipe-Gois/Vital-Hub",
+      title: "Vital Hub",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam placeat perspiciatis nulla omnis voluptatibus, dolorum delectus ab sint quo neque quas, dolores facere iusto, corrupti consequatur quasi itaque animi?",
+        "O VitalHub é uma plataforma móvel que simplifica a interação entre médicos e pacientes, centralizando agendamentos, consultas e comunicação. A solução permite o agendamento eficiente de consultas, visualização de trajetos até a clínica via GPS e contato direto com os médicos, otimizando a experiência de ambos e eliminando a fragmentação no processo.",
     },
     {
-      urlDeploy: "ASDASD",
+      urlVideoApplication: "",
+      urlDeploy: "https://eventplusfilipe.vercel.app",
       skills: [
-        "C#",
-        "Dart",
-        "Azure DevOps",
+        "React.JS",
+        "JavaScript",
         "CSS3",
+        "C#",
+        "SQL Server",
         "Figma",
-        "Git",
-        "React Native",
         "Microsoft Azure",
+        "Git",
+        "Trello",
       ],
       image: {
-        alt: "teste",
-        src: ImageFilipe,
+        alt: "Logo do projeto Event Plus.",
+        src: EventPlus,
       },
-      urlRepository: "",
-      title: "teste",
+      urlRepository: "https://github.com/Filipe-Gois/eventplus-finalizado",
+      title: "Event Plus",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam placeat perspiciatis nulla omnis voluptatibus, dolorum delectus ab sint quo neque quas, dolores facere iusto, corrupti consequatur quasi itaque animi?",
+        "O Event Plus é uma aplicação web intuitiva e robusta voltada para o gerenciamento completo de eventos de instituições. A plataforma permite o planejamento, organização e gerenciamento de eventos de forma eficaz, otimizando o processo desde a criação até a finalização.",
     },
   ];
-
   const uniqueProjects = new Set<ProjectType>(projects);
+
+  const [urlVideoSelected, setUrlVideoSelected] = useState("");
 
   return (
     <section className="w-full h-full flex flex-col items-center">
@@ -81,6 +90,8 @@ const Projects = () => {
       <div className="mt-16 flex flex-col gap-10">
         {Array.from(uniqueProjects).map((project, index) => (
           <ProjectCard
+            setUrlVideoSelected={setUrlVideoSelected}
+            urlVideoSelected={urlVideoSelected}
             project={{ ...project, isLeftImage: index % 2 !== 0 }}
             key={index}
           />

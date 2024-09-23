@@ -9,7 +9,6 @@ export type ProjectType = {
   image: ProjectImage;
   urlRepository: string;
   urlDeploy?: string;
-  urlVideoApplication: string;
   isLeftImage?: boolean;
 };
 
@@ -41,5 +40,4 @@ export type SkillName =
   | "Git"
   | "Azure DevOps"
   | "Microsoft Azure"
-  | "Trello"
-  | "Styled Components";
+  | "Trello";

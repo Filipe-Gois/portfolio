@@ -1,24 +1,10 @@
-"use client";
 import { ProjectType, SkillName } from "@/Types";
 import ImageComponent from "../Image";
-import { FaExternalLinkAlt, FaEye } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { Github } from "lucide-react";
-import { Dispatch, SetStateAction } from "react";
 
-const ProjectCard = ({
-  project,
-  urlVideoSelected,
-  setUrlVideoSelected,
-}: {
-  project: ProjectType;
-  urlVideoSelected: string;
-  setUrlVideoSelected: Dispatch<SetStateAction<string>>;
-}) => {
+const ProjectCard = ({ project }: { project: ProjectType }) => {
   const uniqueSkills = new Set<SkillName>(project.skills);
-
-  const showVideoApplication = () => {
-    setUrlVideoSelected(project.urlVideoApplication);
-  };
 
   return (
     <div
@@ -26,20 +12,13 @@ const ProjectCard = ({
         project.isLeftImage && "flex-row-reverse"
       } xl:!min-h-[385px]`}
     >
-      <div className="group dark:bg-lightScheme-tertiary bg-darkScheme-tertiary !bg-opacity-10 dark:!bg-opacity-30  rounded-t-xl p-5 md:w-1/2 flex !items-center justify-center relative">
+      <div className="dark:bg-lightScheme-tertiary bg-darkScheme-tertiary !bg-opacity-10 dark:!bg-opacity-30  rounded-t-xl p-5 md:w-1/2 md:flex md:!items-center md:justify-center">
         <ImageComponent
           alt={project.image.alt}
-          className={`rounded-3xl border-y-8 border-none w-full max-h-[200px] md:max-w-[400px] md:max-h-[200px] lg:max-w-[400px] lg:max-h-[250px] transition-all ease-in-out duration-500 hover:scale-125 cursor-pointer hover:opacity-50`}
+          className={`rounded-3xl border-y-8 border-none md:max-h-[100%] md:max-w-[100%] lg:max-w-[80%] 2xl:max-w-[85%]`}
           src={project.image.src}
         />
-        <button
-          onClick={showVideoApplication}
-          className="transition-all ease-in-out duration-500 cursor-pointer absolute top-[50%] right-[50%] transform translate-x-[50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 hover:scale-125"
-        >
-          <FaEye className="size-5 text-complementary-lightGreen" size={18} />
-        </button>
       </div>
-
       <div className="p-5 md:w-1/2">
         <p className="first-letter:uppercase text-2xl lg:text-4xl">
           {project.title}
@@ -58,7 +37,7 @@ const ProjectCard = ({
         </div>
 
         <div className="flex items-center gap-3 mt-6">
-          {project.urlDeploy ? (
+          {project.urlDeploy && (
             <a
               className="hover:text-complementary-lightGreen transition-all ease-in-out duration-500 cursor-pointer hover:scale-125"
               href={project.urlDeploy}
@@ -66,13 +45,6 @@ const ProjectCard = ({
             >
               <FaExternalLinkAlt className="size-5" size={18} />
             </a>
-          ) : (
-            <button
-              onClick={showVideoApplication}
-              className="hover:text-complementary-lightGreen transition-all ease-in-out duration-500 cursor-pointer hover:scale-125"
-            >
-              <FaEye className="size-5" size={18} />
-            </button>
           )}
 
           <a

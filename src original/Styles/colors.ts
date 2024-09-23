@@ -1,4 +1,4 @@
-const colors = {
+export const colors = {
   complementary: {
     black: "#2D3341",
     gray: "#525c68",
@@ -17,5 +17,3 @@ const colors = {
     tertiary: "#E6E8EB",
   },
 };
-
-export default colors;
