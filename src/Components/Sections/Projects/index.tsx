@@ -2,11 +2,11 @@
 import ProjectCard from "@/components/Cards";
 import Tag from "@/components/Tag";
 import { ProjectType } from "@/Types";
-import ImageFilipe from "/public/Images/Filipe.jpeg";
 import FitTrack from "/public/Images/Projects/FitTrack/fittrack-logo.png";
 import EventPlus from "/public/Images/Projects/EventPlus/eventplus-logo.png";
 import VitalHub from "/public/Images/Projects/VitalHub/vitalhub-logo.png";
 import { useState } from "react";
+import { ModalVideoProjects } from "@/components/Modal";
 
 const Projects = () => {
   const projects: ProjectType[] = [
@@ -36,6 +36,7 @@ const Projects = () => {
       urlVideoApplication: "",
       skills: [
         "React Native",
+        "JavaScript",
         "Styled Components",
         "C#",
         "SQL Server",
@@ -81,6 +82,8 @@ const Projects = () => {
 
   const [urlVideoSelected, setUrlVideoSelected] = useState("");
 
+  const [isOpenModal, setIsOpenModal] = useState(false);
+
   return (
     <section className="w-full h-full flex flex-col items-center">
       <Tag title="Projetos" />
@@ -90,13 +93,19 @@ const Projects = () => {
       <div className="mt-16 flex flex-col gap-10">
         {Array.from(uniqueProjects).map((project, index) => (
           <ProjectCard
+            setIsOpenModal={setIsOpenModal}
             setUrlVideoSelected={setUrlVideoSelected}
-            urlVideoSelected={urlVideoSelected}
             project={{ ...project, isLeftImage: index % 2 !== 0 }}
             key={index}
           />
         ))}
       </div>
+
+      <ModalVideoProjects
+        setIsOpen={setIsOpenModal}
+        isOpen={isOpenModal}
+        uriVideoProject={urlVideoSelected}
+      />
     </section>
   );
 };

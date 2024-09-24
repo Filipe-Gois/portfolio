@@ -7,17 +7,18 @@ import { Dispatch, SetStateAction } from "react";
 
 const ProjectCard = ({
   project,
-  urlVideoSelected,
   setUrlVideoSelected,
+  setIsOpenModal,
 }: {
   project: ProjectType;
-  urlVideoSelected: string;
   setUrlVideoSelected: Dispatch<SetStateAction<string>>;
+  setIsOpenModal: Dispatch<SetStateAction<boolean>>;
 }) => {
   const uniqueSkills = new Set<SkillName>(project.skills);
 
   const showVideoApplication = () => {
     setUrlVideoSelected(project.urlVideoApplication);
+    setIsOpenModal(true);
   };
 
   return (
@@ -27,17 +28,19 @@ const ProjectCard = ({
       } xl:!min-h-[385px]`}
     >
       <div className="group dark:bg-lightScheme-tertiary bg-darkScheme-tertiary !bg-opacity-10 dark:!bg-opacity-30  rounded-t-xl p-5 md:w-1/2 flex !items-center justify-center relative">
-        <ImageComponent
-          alt={project.image.alt}
-          className={`rounded-3xl border-y-8 border-none w-full max-h-[200px] md:max-w-[400px] md:max-h-[200px] lg:max-w-[400px] lg:max-h-[250px] transition-all ease-in-out duration-500 hover:scale-125 cursor-pointer hover:opacity-50`}
-          src={project.image.src}
-        />
         <button
+          className="w-full h-max flex justify-center items-center"
           onClick={showVideoApplication}
-          className="transition-all ease-in-out duration-500 cursor-pointer absolute top-[50%] right-[50%] transform translate-x-[50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 hover:scale-125"
         >
-          <FaEye className="size-5 text-complementary-lightGreen" size={18} />
+          <ImageComponent
+            alt={project.image.alt}
+            className={`rounded-3xl border-y-8 border-none w-full max-h-[200px] md:max-w-[400px] md:max-h-[200px] lg:max-w-[400px] lg:max-h-[250px] transition-all ease-in-out duration-500 hover:scale-125 cursor-pointer hover:opacity-50`}
+            src={project.image.src}
+          />
         </button>
+        <span className="transition-all ease-in-out duration-500 cursor-pointer absolute top-[50%] right-[50%] transform translate-x-[50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 hover:scale-125">
+          <FaEye className="size-5 text-complementary-lightGreen" size={18} />
+        </span>
       </div>
 
       <div className="p-5 md:w-1/2">
