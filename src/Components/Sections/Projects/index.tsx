@@ -11,7 +11,7 @@ import { ModalVideoProjects } from "@/components/Modal";
 const Projects = () => {
   const projects: ProjectType[] = [
     {
-      urlVideoApplication: "",
+      urlVideoApplication: "/Videos/Projects/FitTrack/fittrack.mp4",
       urlRepository: "https://github.com/Filipe-Gois/FitTrack",
       title: "FitTrack",
       description:
@@ -33,7 +33,7 @@ const Projects = () => {
       },
     },
     {
-      urlVideoApplication: "",
+      urlVideoApplication: "/Videos/Projects/VitalHub/vitalhub.mp4",
       skills: [
         "React Native",
         "JavaScript",
@@ -80,7 +80,9 @@ const Projects = () => {
   ];
   const uniqueProjects = new Set<ProjectType>(projects);
 
-  const [urlVideoSelected, setUrlVideoSelected] = useState("");
+  const [selectedProject, setSelectedProject] = useState<ProjectType | null>(
+    null
+  );
 
   const [isOpenModal, setIsOpenModal] = useState(false);
 
@@ -94,7 +96,7 @@ const Projects = () => {
         {Array.from(uniqueProjects).map((project, index) => (
           <ProjectCard
             setIsOpenModal={setIsOpenModal}
-            setUrlVideoSelected={setUrlVideoSelected}
+            setSelectedProject={setSelectedProject}
             project={{ ...project, isLeftImage: index % 2 !== 0 }}
             key={index}
           />
@@ -104,7 +106,7 @@ const Projects = () => {
       <ModalVideoProjects
         setIsOpen={setIsOpenModal}
         isOpen={isOpenModal}
-        uriVideoProject={urlVideoSelected}
+        selectedProject={selectedProject}
       />
     </section>
   );

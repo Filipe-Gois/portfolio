@@ -7,17 +7,17 @@ import { Dispatch, SetStateAction } from "react";
 
 const ProjectCard = ({
   project,
-  setUrlVideoSelected,
+  setSelectedProject,
   setIsOpenModal,
 }: {
   project: ProjectType;
-  setUrlVideoSelected: Dispatch<SetStateAction<string>>;
+  setSelectedProject: Dispatch<SetStateAction<ProjectType | null>>;
   setIsOpenModal: Dispatch<SetStateAction<boolean>>;
 }) => {
   const uniqueSkills = new Set<SkillName>(project.skills);
 
   const showVideoApplication = () => {
-    setUrlVideoSelected(project.urlVideoApplication);
+    setSelectedProject(project);
     setIsOpenModal(true);
   };
 
@@ -38,7 +38,7 @@ const ProjectCard = ({
             src={project.image.src}
           />
         </button>
-        <span className="transition-all ease-in-out duration-500 cursor-pointer absolute top-[50%] right-[50%] transform translate-x-[50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 hover:scale-125">
+        <span className="transition-all ease-in-out duration-500 cursor-pointer absolute top-[50%] right-[50%] transform translate-x-[50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 hover:scale-125 ">
           <FaEye className="size-5 text-complementary-lightGreen" size={18} />
         </span>
       </div>

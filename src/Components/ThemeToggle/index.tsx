@@ -16,7 +16,7 @@ const ThemeToggle = () => {
     // ).matches;
     // return prefersDarkMode ? "dark" : "light";
 
-    return "dark";
+    return "light";
   });
 
   useEffect(() => {
