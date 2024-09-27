@@ -11,7 +11,6 @@ const WelcomeTopic = () => {
         <div className="h-full w-4/5 md:w-full lg:w-2/5 xl:w-2/5 2xl:w-2/6 flex items-center justify-center">
           <ImageComponent
             isFloat
-            className="p-[6px] w-full border-lightScheme-tertiary border-x-8 border-b-8 border-opacity-45 md:border-l-[26px] md:border-b-[26px] md:border-r-0"
             src={ImageFilipe}
             alt={"Imagem de Filipe Góis, dono do portfólio."}
             width={150}

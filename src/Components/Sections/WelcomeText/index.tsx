@@ -11,7 +11,7 @@ const WelcomeText = () => {
     <section className="w-full h-max flex flex-col items-center md:flex-row-reverse">
       <div className="h-full w-full lg:w-3/5 xl:w-2/5 flex items-center justify-center">
         <ImageComponent
-          className="primary-image p-[6px] border-lightScheme-tertiary border-x-8 border-b-8 border-opacity-45 md:border-l-0 md:border-b-[26px] md:border-r-[26px] w-full"
+          className=""
           src={ImageFilipe}
           alt={"Imagem de Filipe Góis, dono do portfólio."}
           width={150}

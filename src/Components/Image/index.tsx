@@ -4,7 +4,7 @@ import "./style.css";
 import { ImageType } from "@/Types";
 
 const ImageStyle = tv({
-  base: `primary-image p-[6px] border-lightScheme-tertiary border-x-8 border-b-8 border-opacity-45 relative before:absolute after:h-[80%] before:h-[80%] after:absolute`,
+  base: `rounded-lg w-full`,
   variants: {
     isFloat: {
       true: `float-img`,
@@ -22,7 +22,7 @@ const ImageComponent = ({
 }: ImageType) => {
   return (
     <Image
-      className={`${ImageStyle({ isFloat })} ${className} `}
+      className={`${ImageStyle({ isFloat, className })} `}
       src={src}
       alt={alt}
       width={width}

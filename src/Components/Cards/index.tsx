@@ -27,28 +27,37 @@ const ProjectCard = ({
         project.isLeftImage && "flex-row-reverse"
       } xl:!min-h-[385px]`}
     >
-      <div className="group dark:bg-lightScheme-tertiary bg-darkScheme-tertiary !bg-opacity-10 dark:!bg-opacity-30  rounded-t-xl p-5 md:w-1/2 flex !items-center justify-center relative">
+      {/* Image Section */}
+      <div className="relative dark:bg-lightScheme-tertiary bg-darkScheme-tertiary !bg-opacity-10 dark:!bg-opacity-30  rounded-t-xl p-5 md:w-1/2 flex !items-center justify-center ">
         <button
-          className="w-full h-max flex justify-center items-center"
+          className="w-full h-max flex justify-center items-center relative"
           onClick={showVideoApplication}
         >
-          <ImageComponent
-            alt={project.image.alt}
-            className={`rounded-3xl border-y-8 border-none w-full max-h-[200px] md:max-w-[400px] md:max-h-[200px] lg:max-w-[400px] lg:max-h-[250px] transition-all ease-in-out duration-500 hover:scale-125 cursor-pointer hover:opacity-50`}
-            src={project.image.src}
-          />
+          {/* Image with hover effect */}
+          <div className="md:hover:scale-125 group relative transition-all ease-in-out duration-500 w-full max-h-[200px] md:max-w-[400px] md:max-h-[200px] lg:max-w-[400px] lg:max-h-[250px]">
+            <ImageComponent
+              alt={project.image.alt}
+              className={`rounded-xl border-none w-full max-h-[200px] transition-transform ease-in-out duration-500`}
+              src={project.image.src}
+            />
+            {/* Darker overlay on hover */}
+            <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all ease-in-out duration-500 rounded-xl"></div>
+            {/* Eye icon */}
+            <span className="transition-opacity ease-in-out duration-500 cursor-pointer absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+              <FaEye className="size-5 text-complementary-white" size={30} />
+            </span>
+          </div>
         </button>
-        <span className="transition-all ease-in-out duration-500 cursor-pointer absolute top-[50%] right-[50%] transform translate-x-[50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 hover:scale-125 ">
-          <FaEye className="size-5 text-complementary-lightGreen" size={18} />
-        </span>
       </div>
 
+      {/* Project Details Section */}
       <div className="p-5 md:w-1/2">
         <p className="first-letter:uppercase text-2xl lg:text-4xl">
           {project.title}
         </p>
         <p className="paragraph mt-4">{project.description}</p>
 
+        {/* Skills */}
         <div className="mt-6 flex gap-2 flex-wrap">
           {Array.from(uniqueSkills).map((skill, index) => (
             <span
@@ -60,6 +69,7 @@ const ProjectCard = ({
           ))}
         </div>
 
+        {/* Links */}
         <div className="flex items-center gap-3 mt-6">
           {project.urlDeploy ? (
             <a
