@@ -1,19 +1,27 @@
+import { RefObject } from "react";
 import "./style.css";
 
 type MenuMobileProps = {
   isNavbarVisible: boolean;
   setIsNavbarVisible: (isNavbarVisible: boolean) => void;
+  menuRef: RefObject<HTMLInputElement>;
 };
 
 const MenuMobile = ({
   isNavbarVisible,
   setIsNavbarVisible,
+  menuRef,
 }: MenuMobileProps) => {
   const handleToggle = () => setIsNavbarVisible(!isNavbarVisible);
 
   return (
     <label className="hamburger cursor-pointer md:hidden">
-      <input onChange={handleToggle} type="checkbox" className="hidden" />
+      <input
+        ref={menuRef}
+        onChange={handleToggle}
+        type="checkbox"
+        className="hidden"
+      />
       <svg
         viewBox="0 0 32 32"
         className="h-12 transition-transform duration-[600ms] ease-[cubic-bezier(0.4,0,0.2,1)]"

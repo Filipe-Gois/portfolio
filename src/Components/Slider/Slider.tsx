@@ -7,9 +7,13 @@ import {
   Autoplay,
   EffectCoverflow,
   EffectCards,
+  EffectFlip,
 } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-flip";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-import "swiper/swiper-bundle.css";
 import { ReactNode } from "react";
 import { tv } from "tailwind-variants";
 import "./style.css";
@@ -36,6 +40,7 @@ const Slider = ({ children, settings, className = "" }: SliderProps) => {
         Autoplay,
         EffectCoverflow,
         EffectCards,
+        EffectFlip,
       ]}
       {...settings}
     >

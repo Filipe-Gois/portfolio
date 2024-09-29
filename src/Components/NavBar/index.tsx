@@ -2,16 +2,28 @@ import ThemeToggle from "../ThemeToggle";
 import { FaUserAlt, FaBriefcase, FaCode } from "react-icons/fa";
 import { FaFolderOpen } from "react-icons/fa6";
 import { IoIosSend } from "react-icons/io";
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, RefObject, SetStateAction } from "react";
+import LanguageToggle from "../LanguageToggle";
 
 type NavBarProps = {
   isNavbarVisible: boolean;
   setIsNavbarVisible: Dispatch<SetStateAction<boolean>>;
+  menuRef: RefObject<HTMLInputElement>;
 };
 
-const NavBar = ({ isNavbarVisible, setIsNavbarVisible }: NavBarProps) => {
+const NavBar = ({
+  isNavbarVisible,
+  setIsNavbarVisible,
+  menuRef,
+}: NavBarProps) => {
   const headerHeight = 96;
-  const closeNavBar = () => setIsNavbarVisible(false);
+  const closeNavBar = () => {
+    if (menuRef.current) {
+      menuRef.current.checked = false;
+    }
+
+    setIsNavbarVisible(false);
+  };
 
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
@@ -75,6 +87,9 @@ const NavBar = ({ isNavbarVisible, setIsNavbarVisible }: NavBarProps) => {
 
         <li className="flex justify-center">
           <ThemeToggle />
+        </li>
+        <li className="flex justify-center items-center md:h-full">
+          <LanguageToggle />
         </li>
       </ul>
     </nav>

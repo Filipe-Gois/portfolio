@@ -40,7 +40,9 @@ const Contact = () => {
       </div>
 
       <div className="mt-8 flex flex-col gap-2">
-        <span>Você pode me encontrar nessas plataformas:</span>
+        <span className="text-center">
+          Você pode me encontrar nessas plataformas:
+        </span>
         <div className="flex justify-center w-full h-max gap-2">
           <a
             className="hover:text-complementary-lightGreen hover:scale-125 transition-all ease-in-out duration-500 cursor-pointer"

@@ -1,9 +1,8 @@
-import ImageFilipe from "../../../../public/Images/Filipe.jpeg";
 import { MapPin, Github } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa";
 import "./style.css";
 import CvButtonDownloader from "@/components/CvButtonDownloader";
-import ImageComponent from "@/components/Image";
+import { ImageFlip } from "@/components/Image";
 import { TitleAnimated } from "@/components/Title";
 
 const WelcomeText = () => {
@@ -14,14 +13,8 @@ const WelcomeText = () => {
 
   return (
     <section className="w-full h-max flex flex-col items-center md:flex-row-reverse">
-      <div className="h-full w-full lg:w-3/5 xl:w-2/5 flex items-center justify-center">
-        <ImageComponent
-          className=""
-          src={ImageFilipe}
-          alt={"Imagem de Filipe Góis, dono do portfólio."}
-          width={150}
-          height={250}
-        />
+      <div className="h-full w-full md:w-2/4 lg:w-2/5 flex items-center justify-center">
+        <ImageFlip />
       </div>
       <div className="flex w-full flex-col gap-1 mt-8 md:mt-0">
         <TitleAnimated />
