@@ -1,0 +1,9 @@
+sublinhado da nav colado na borda de baixo tá esquisito
+
+tecnologias terem um espaço maior do que o texto nos cards de projetos
+
+section "sobre mim" tem muito texto ? devo colocar em topicos ?
+
+box shadow tá estranho no tema dark
+
+algo a melhorar nos cards de serviços ?

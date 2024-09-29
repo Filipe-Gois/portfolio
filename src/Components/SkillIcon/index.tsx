@@ -13,6 +13,7 @@ import {
   SiMongodb,
   SiMicrosoftazure,
   SiAzuredevops,
+  SiStyledcomponents,
 } from "react-icons/si";
 import { SkillName } from "@/Types";
 
@@ -38,11 +39,13 @@ const iconMap: Record<SkillName, JSX.Element> = {
   "Azure DevOps": <SiAzuredevops size={iconSize} />,
   "Microsoft Azure": <SiMicrosoftazure size={iconSize} />,
   Trello: <FaTrello size={iconSize} />,
+  "Styled Components": <SiStyledcomponents />,
 };
 
 type SkillIconProps = {
   icon: SkillName; // Use SkillName como o tipo das skills
 };
+
 const SkillIcon = ({ icon }: SkillIconProps) => {
   const iconSkill = iconMap[icon];
   return (

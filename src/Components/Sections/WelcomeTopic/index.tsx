@@ -4,7 +4,7 @@ import Tag from "@/components/Tag";
 
 const WelcomeTopic = () => {
   return (
-    <section className="w-full h-full flex flex-col items-center">
+    <section id="about-me" className="w-full h-full flex flex-col items-center">
       <Tag title="Sobre mim" />
 
       <div className="mt-16 w-full flex flex-col md:flex-row justify-between items-center h-full">
@@ -23,40 +23,23 @@ const WelcomeTopic = () => {
             Quer saber mais sobre mim ?
           </h2>
           <p className="paragraph">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non eius
-            ipsa nisi beatae minima, ullam quas qui recusandae facere ducimus!
-            Similique deleniti nihil error nostrum ipsum fugiat sit excepturi
-            quasi?
-          </p>
-          <p className="paragraph">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non eius
-            ipsa nisi beatae minima, ullam quas qui recusandae facere ducimus!
-            Similique deleniti nihil error nostrum ipsum fugiat sit excepturi
-            quasi?
-          </p>
-          <p className="paragraph">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non eius
-            ipsa nisi beatae minima, ullam quas qui recusandae facere ducimus!
-            Similique deleniti nihil error nostrum ipsum fugiat sit excepturi
-            quasi?
-          </p>
-          <p className="paragraph">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non eius
-            ipsa nisi beatae minima, ullam quas qui recusandae facere ducimus!
-            Similique deleniti nihil error nostrum ipsum fugiat sit excepturi
-            quasi?
-          </p>
-          <p className="paragraph">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non eius
-            ipsa nisi beatae minima, ullam quas qui recusandae facere ducimus!
-            Similique deleniti nihil error nostrum ipsum fugiat sit excepturi
-            quasi?
-          </p>
-          <p className="paragraph">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non eius
-            ipsa nisi beatae minima, ullam quas qui recusandae facere ducimus!
-            Similique deleniti nihil error nostrum ipsum fugiat sit excepturi
-            quasi?
+            E aí, tudo bem? Sou Filipe Góis, tenho 17 anos e minha jornada no
+            mundo da programação começou quando entrei no curso
+            <strong> técnico em Desenvolvimento de Sistemas</strong> no SENAI
+            aos 16. Foi uma experiência que abriu meus olhos para o universo da
+            tecnologia, e desde então, venho me dedicando a melhorar minhas
+            habilidades. Atualmente, estou migrando para Flutter. Além da
+            programação, sou apaixonado por
+            <strong> esportes! </strong>
+            Adoro jogar basquete, vôlei e faço musculação regularmente. Essas
+            atividades me ajudam a manter o foco e a disciplina, tanto nos meus
+            estudos quanto na vida pessoal. Acredito que o equilíbrio entre
+            corpo e mente é essencial para alcançar grandes resultados. Pretendo
+            cursar <strong> Engenharia de Software </strong> como graduação e
+            tenho o sonho de <strong> trabalhar fora do Brasil</strong>,
+            explorando novas culturas e oportunidades na área de tecnologia.
+            Cada projeto que faço me aproxima mais dos meus objetivos, e estou
+            sempre em busca de aprender algo novo e evoluir profissionalmente.
           </p>
         </div>
       </div>

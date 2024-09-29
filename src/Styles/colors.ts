@@ -5,6 +5,7 @@ const colors = {
     white: "#FAFAFA",
     lightGreen: "#0ACC82",
     darkGreen: "#14a401",
+    blackv2: "#1F2937",
   },
   darkScheme: {
     primary: "#030712",

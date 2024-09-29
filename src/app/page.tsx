@@ -1,4 +1,6 @@
+import Contact from "@/components/Sections/Contact";
 import Projects from "@/components/Sections/Projects";
+import Services from "@/components/Sections/Services";
 import Skills from "@/components/Sections/Skills";
 import WelcomeText from "@/components/Sections/WelcomeText";
 import WelcomeTopic from "@/components/Sections/WelcomeTopic";
@@ -24,6 +26,16 @@ export default function Home() {
       <div className="dark:bg-darkScheme-secondary bg-lightScheme-tertiary w-full flex justify-center py-10">
         <div className="flex h-full w-[85vw] flex-col items-center ">
           <Projects />
+        </div>
+      </div>
+      <div className="dark:bg-darkScheme-primary bg-lightScheme-secondary w-full flex justify-center py-10">
+        <div className="flex h-full w-[85vw] flex-col items-center ">
+          <Services />
+        </div>
+      </div>
+      <div className="dark:bg-darkScheme-secondary bg-lightScheme-tertiary w-full flex justify-center py-10">
+        <div className="flex h-full w-[85vw] flex-col items-center ">
+          <Contact />
         </div>
       </div>
     </main>

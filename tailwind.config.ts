@@ -12,7 +12,7 @@ const config: Config = {
   theme: {
     extend: {
       boxShadow: {
-        custom: "4px 4px 4px 2px rgba(0, 0, 0, 0.3)",
+        custom: "3px 3px 3px 2px rgba(0, 0, 0, 0.3)",
       },
       borderRadius: {
         lg: "var(--radius)",

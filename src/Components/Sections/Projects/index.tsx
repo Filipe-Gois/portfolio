@@ -87,10 +87,10 @@ const Projects = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
 
   return (
-    <section className="w-full h-full flex flex-col items-center">
+    <section id="projects" className="w-full h-full flex flex-col items-center">
       <Tag title="Projetos" />
 
-      <span className="paragraph mt-8">Alguns dos projetos que construí: </span>
+      <h2 className="paragraph mt-8">Alguns dos projetos que construí: </h2>
 
       <div className="mt-16 flex flex-col gap-10">
         {Array.from(uniqueProjects).map((project, index) => (

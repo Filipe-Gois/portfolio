@@ -7,6 +7,11 @@ import ImageComponent from "@/components/Image";
 import { TitleAnimated } from "@/components/Title";
 
 const WelcomeText = () => {
+  const businessData = {
+    githubUri: `https://github.com/Filipe-Gois/`,
+    linkedinUri: `https://www.linkedin.com/in/filipe-góis/`,
+  };
+
   return (
     <section className="w-full h-max flex flex-col items-center md:flex-row-reverse">
       <div className="h-full w-full lg:w-3/5 xl:w-2/5 flex items-center justify-center">
@@ -28,13 +33,7 @@ const WelcomeText = () => {
           além das telas. Estou constantemente explorando novas linguagens e
           ferramentas, como o <strong className="italic">Dart e Flutter</strong>
           , tendo experiência também em
-          <strong className="italic"> React Native</strong>. Acredito que o
-          aprendizado contínuo é a chave para a excelência. Atualmente, estou
-          treinando para{" "}
-          <strong className="italic">competir na WorldSkills 2028</strong>, em
-          Aichi, Japão, com o sonho de{" "}
-          <strong className="italic">conquistar a medalha de ouro</strong> para
-          o Brasil.
+          <strong className="italic"> React Native</strong>.
         </p>
 
         <CvButtonDownloader />
@@ -53,14 +52,14 @@ const WelcomeText = () => {
         <div className="text-darkScheme-primary dark:text-lightScheme-primary flex gap-2 mt-8 w-max">
           <a
             className="hover:text-complementary-lightGreen hover:scale-125 transition-all ease-in-out duration-500 cursor-pointer"
-            href="https://github.com/Filipe-Gois/"
+            href={businessData.githubUri}
             target="_blank"
           >
             <Github className="size-8" size={18} />
           </a>
           <a
             className="hover:text-complementary-lightGreen hover:scale-125 transition-all ease-in-out duration-500 cursor-pointer"
-            href="https://www.linkedin.com/in/filipe-góis-841b58206/"
+            href={businessData.linkedinUri}
             target="_blank"
           >
             <FaLinkedin className="size-8" size={18} />

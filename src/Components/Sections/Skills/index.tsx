@@ -32,7 +32,7 @@ const Skills = () => {
 
   const [settingsSlides, setSettingsSlides] = useState({
     spaceBetween: 0,
-    slidesPerView: 5,
+    slidesPerView: 3,
     autoplay: {
       delay: 2500,
     },
@@ -62,14 +62,14 @@ const Skills = () => {
   }, []);
 
   return (
-    <section className="w-full h-full flex flex-col items-center">
+    <section id="skills" className="w-full h-full flex flex-col items-center">
       <Tag title="Tecnologias" />
 
-      <div className="w-full h-full mt-16">
+      <div className="w-full h-full mt-8">
         <Slider className="" settings={settingsSlides}>
           {Array.from(uniqueSkills).map((skill, index) => {
             return (
-              <Slide className="!flex !justify-around " key={index}>
+              <Slide className="mb-8" key={index}>
                 <SkillIcon icon={skill} />
               </Slide>
             );

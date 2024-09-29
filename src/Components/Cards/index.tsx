@@ -1,9 +1,12 @@
 "use client";
-import { ProjectType, SkillName } from "@/Types";
+import { offeredService, ProjectType, SkillName } from "@/Types";
 import ImageComponent from "../Image";
 import { FaExternalLinkAlt, FaEye } from "react-icons/fa";
 import { Github } from "lucide-react";
 import { Dispatch, SetStateAction } from "react";
+
+import {} from "lucide-react";
+import ServiceIcon from "../ServiceIcon";
 
 const ProjectCard = ({
   project,
@@ -97,6 +100,19 @@ const ProjectCard = ({
           </a>
         </div>
       </div>
+    </div>
+  );
+};
+
+export const ServiceCard = ({ service }: { service: offeredService }) => {
+  return (
+    <div className="w-11/12 md:w-4/5 h-[300px] md:h-[400px] xl:h-[300px] bg-white dark:bg-complementary-blackv2 rounded-xl p-5 flex flex-col items-center justify-around text-xl transition-all ease-in-out duration-300 md:hover:scale-110 !cursor-pointer shadow-custom">
+      <ServiceIcon icon={service.title} />
+      <p className="justify-center text-center text-complementary-lightGreen">
+        {service.title}
+      </p>
+
+      <p className="paragraph !text-center">{service.description}</p>
     </div>
   );
 };

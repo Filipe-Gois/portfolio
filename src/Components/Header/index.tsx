@@ -10,7 +10,10 @@ const Header = () => {
     <header className="z-50 select-none w-full h-14 px-[7.5%] bg-lightScheme-secondary dark:bg-darkScheme-primary flex justify-between items-center top-0 fixed md:justify-between">
       <Logo />
 
-      <NavBar isNavbarVisible={isNavbarVisible} />
+      <NavBar
+        isNavbarVisible={isNavbarVisible}
+        setIsNavbarVisible={setIsNavbarVisible}
+      />
 
       <MenuMobile
         isNavbarVisible={isNavbarVisible}

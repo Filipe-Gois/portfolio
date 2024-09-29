@@ -1,32 +1,22 @@
-// "use client";
 import { useEffect, useState } from "react";
 import "./style.css";
+import Cookies from "js-cookie";
 
 const ThemeToggle = () => {
   const [theme, setTheme] = useState<string>(() => {
-    // // Verifica se o tema já está armazenado no localStorage
-    // const savedTheme = localStorage.getItem("theme");
-    // if (savedTheme) {
-    //   return savedTheme;
-    // }
-
-    // // Se não houver tema salvo, verifica o tema do dispositivo
-    // const prefersDarkMode = window.matchMedia(
-    //   "(prefers-color-scheme: dark)"
-    // ).matches;
-    // return prefersDarkMode ? "dark" : "light";
-
-    return "light";
+    // Verifica se o tema já está armazenado nos cookies
+    const savedTheme = Cookies.get("theme");
+    return savedTheme || "light"; // Se não houver tema salvo, retorna "light"
   });
 
   useEffect(() => {
     // Aplica o tema no <html>
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
-      // localStorage.setItem("theme", "dark");
+      Cookies.set("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
-      // localStorage.setItem("theme", "light");
+      Cookies.set("theme", "light");
     }
   }, [theme]);
 
@@ -43,6 +33,7 @@ const ThemeToggle = () => {
         type="checkbox"
         id="themeToggle"
         className="themeToggleInput"
+        checked={theme === "dark"}
       />
       <svg
         width="18"

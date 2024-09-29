@@ -43,3 +43,21 @@ export type SkillName =
   | "Microsoft Azure"
   | "Trello"
   | "Styled Components";
+
+export type offeredServiceTitle =
+  | "Desenvolvimento de Aplicativos Móveis"
+  | "Criação de Sites"
+  | "Desenvolvimento de APIs e Back-end"
+  | "Integração e Automação com Microsoft Azure"
+  | "Otimização de Performance Web"
+  | "Design de Interfaces Responsivas"
+  | "Soluções de DevOps"
+  | "Gerenciamento de Projetos"
+  | "Integração de Banco de Dados"
+  | "Desenvolvimento Full-Stack"
+  | "Manutenção e Suporte Técnico";
+
+export type offeredService = {
+  title: offeredServiceTitle;
+  description: string;
+};
