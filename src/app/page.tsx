@@ -1,9 +1,9 @@
-import Contact from "../components/Sections/Contact";
-import Projects from "../components/Sections/Projects";
-import Services from "../components/Sections/Services";
-import Skills from "../components/Sections/Skills";
-import WelcomeText from "../components/Sections/WelcomeText";
-import WelcomeTopic from "../components/Sections/WelcomeTopic";
+import Contact from "@/components/Sections/Contact/index";
+import Projects from "@/components/Sections/Projects/index";
+import Services from "@/components/Sections/Services/index";
+import Skills from "@/components/Sections/Skills/index";
+import WelcomeText from "@/components/Sections/WelcomeText/index";
+import WelcomeTopic from "@/components/Sections/WelcomeTopic/index";
 
 export default function Home() {
   return (
