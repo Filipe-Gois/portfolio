@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import { cn } from "@/lib/utils";
 import Footer from "@/components/Footer";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 
 const inter = Inter({
   weight: ["400", "700"],
@@ -17,17 +19,22 @@ export const metadata: Metadata = {
   description: "Meu Portfólio desenvolvedor full-stack.",
 };
 
-export default function RootLayout({
+export default async function LocaleLayout({
   children,
+  params: { locale },
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string };
 }>) {
+  const messages = await getMessages();
   return (
-    <html lang="pt-BR">
+    <html lang={locale}>
       <body className={cn(`antialiased`, inter.className)}>
-        <Header />
-        {children}
-        <Footer />
+        <NextIntlClientProvider messages={messages}>
+          <Header />
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

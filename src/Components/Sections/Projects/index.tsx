@@ -7,15 +7,17 @@ import EventPlus from "/public/Images/Projects/EventPlus/eventplus-logo.png";
 import VitalHub from "/public/Images/Projects/VitalHub/vitalhub-logo.png";
 import { useState } from "react";
 import { ModalVideoProjects } from "@/components/Modal";
+import { useTranslations } from "next-intl";
 
 const Projects = () => {
+  const t = useTranslations("Projects");
+
   const projects: ProjectType[] = [
     {
       urlVideoApplication: "/Videos/Projects/FitTrack/fittrack.mp4",
       urlRepository: "https://github.com/Filipe-Gois/FitTrack",
       title: "FitTrack",
-      description:
-        "FitTrack é um aplicativo móvel desenvolvido para facilitar o gerenciamento integrado de treinos e alimentação, ajudando os usuários a definirem metas de saúde e bem-estar. A plataforma oferece uma solução completa ao acompanhar tanto o progresso físico quanto a dieta em um único lugar.",
+      description: t("fittrack.descricao"),
       skills: [
         "React Native",
         "JavaScript",
@@ -51,8 +53,7 @@ const Projects = () => {
       },
       urlRepository: "https://github.com/Filipe-Gois/Vital-Hub",
       title: "Vital Hub",
-      description:
-        "O VitalHub é uma plataforma móvel que simplifica a interação entre médicos e pacientes, centralizando agendamentos, consultas e comunicação. A solução permite o agendamento eficiente de consultas, visualização de trajetos até a clínica via GPS e contato direto com os médicos, otimizando a experiência de ambos e eliminando a fragmentação no processo.",
+      description: t("vitalhub.descricao"),
     },
     {
       urlVideoApplication: "",
@@ -74,8 +75,7 @@ const Projects = () => {
       },
       urlRepository: "https://github.com/Filipe-Gois/eventplus-finalizado",
       title: "Event Plus",
-      description:
-        "O Event Plus é uma aplicação web intuitiva e robusta voltada para o gerenciamento completo de eventos de instituições. A plataforma permite o planejamento, organização e gerenciamento de eventos de forma eficaz, otimizando o processo desde a criação até a finalização.",
+      description: t("eventplus.descricao"),
     },
   ];
   const uniqueProjects = new Set<ProjectType>(projects);
@@ -88,9 +88,9 @@ const Projects = () => {
 
   return (
     <section id="projects" className="w-full h-full flex flex-col items-center">
-      <Tag title="Projetos" />
+      <Tag title={t("titulo")} />
 
-      <h2 className="paragraph mt-8">Alguns dos projetos que construí: </h2>
+      <h2 className="paragraph mt-8">{t("sub-titulo")}</h2>
 
       <div className="mt-16 flex flex-col gap-10">
         {Array.from(uniqueProjects).map((project, index) => (

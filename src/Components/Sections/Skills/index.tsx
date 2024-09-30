@@ -3,9 +3,12 @@ import SkillIcon from "@/components/SkillIcon";
 import { Slide, Slider } from "@/components/Slider";
 import Tag from "@/components/Tag";
 import { SkillName } from "@/Types";
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 
 const Skills = () => {
+  const t = useTranslations("Skills");
+
   const skills: SkillName[] = [
     // "Flutter",
     "React Native",
@@ -64,7 +67,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="w-full h-full flex flex-col items-center">
-      <Tag title="Tecnologias" />
+      <Tag title={t("titulo")} />
 
       <div className="w-full h-full mt-8">
         <Slider className="" settings={settingsSlides}>

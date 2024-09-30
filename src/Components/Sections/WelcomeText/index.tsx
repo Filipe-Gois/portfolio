@@ -1,11 +1,15 @@
+"use client";
 import { MapPin, Github } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa";
 import "./style.css";
 import CvButtonDownloader from "@/components/CvButtonDownloader";
 import { ImageFlip } from "@/components/Image";
 import { TitleAnimated } from "@/components/Title";
+import { useTranslations } from "next-intl";
 
 const WelcomeText = () => {
+  const t = useTranslations("apresentacao");
+
   const businessData = {
     githubUri: `https://github.com/Filipe-Gois/`,
     linkedinUri: `https://www.linkedin.com/in/filipe-góis/`,
@@ -19,26 +23,18 @@ const WelcomeText = () => {
       <div className="flex w-full flex-col gap-1 mt-8 md:mt-0">
         <TitleAnimated />
 
-        <p className="paragraph mt-2">
-          Sou um desenvolvedor Full-Stack com foco em{" "}
-          <strong className="italic">mobile</strong>, sempre em busca de
-          aprimorar cada detalhe do meu código. Minha paixão por tecnologia vai
-          além das telas. Estou constantemente explorando novas linguagens e
-          ferramentas, como o <strong className="italic">Dart e Flutter</strong>
-          , tendo experiência também em
-          <strong className="italic"> React Native</strong>.
-        </p>
+        <p className="paragraph mt-2">{t("descricao")}</p>
 
         <CvButtonDownloader />
 
         <div className="mt-8 flex flex-col gap-2 w-max">
           <label className="text-darkScheme-primary dark:text-lightScheme-primary flex gap-1 text-sm lg:text-base">
             <MapPin size={18} />
-            São Paulo, Brasil.
+            {t("saopaulobrasil")}
           </label>
           <label className="text-darkScheme-primary dark:text-lightScheme-primary flex gap-1 items-center text-sm lg:text-base">
             <span className="w-1 h-1 bg-complementary-darkGreen rounded ml-[0.375rem] " />
-            Disponível para projetos.
+            {t("disponIvelparaprojetos")}
           </label>
         </div>
 

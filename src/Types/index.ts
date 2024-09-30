@@ -57,7 +57,20 @@ export type offeredServiceTitle =
   | "Desenvolvimento Full-Stack"
   | "Manutenção e Suporte Técnico";
 
+export type offeredServiceTitleEn =
+  | "Mobile App Development"
+  | "Website Creation"
+  | "API and Back-end Development"
+  | "Integration and Automation with Microsoft Azure"
+  | "Web Performance Optimization"
+  | "Responsive Interface Design"
+  | "DevOps Solutions"
+  | "Project Management"
+  | "Database Integration"
+  | "Full-Stack Development"
+  | "Maintenance and Technical Support";
+
 export type offeredService = {
-  title: offeredServiceTitle;
+  title: offeredServiceTitle | offeredServiceTitleEn | string;
   description: string;
 };

@@ -4,6 +4,7 @@ import { FaFolderOpen } from "react-icons/fa6";
 import { IoIosSend } from "react-icons/io";
 import { Dispatch, RefObject, SetStateAction } from "react";
 import LanguageToggle from "../LanguageToggle";
+import { useTranslations } from "next-intl";
 
 type NavBarProps = {
   isNavbarVisible: boolean;
@@ -16,7 +17,10 @@ const NavBar = ({
   setIsNavbarVisible,
   menuRef,
 }: NavBarProps) => {
+  const t = useTranslations("nav");
+
   const headerHeight = 96;
+
   const closeNavBar = () => {
     if (menuRef.current) {
       menuRef.current.checked = false;
@@ -49,7 +53,7 @@ const NavBar = ({
             onClick={() => scrollToSection("about-me")}
             className="nav-link"
           >
-            Sobre Mim <FaUserAlt className="md:hidden" size={20} />
+            {t("Sobre Mim")} <FaUserAlt className="md:hidden" size={20} />
           </button>
         </li>
         <li className="nav-item">
@@ -57,7 +61,7 @@ const NavBar = ({
             onClick={() => scrollToSection("skills")}
             className="nav-link"
           >
-            Tecnologias <FaCode className="md:hidden" size={20} />
+            {t("Tecnologias")} <FaCode className="md:hidden" size={20} />
           </button>
         </li>
         <li className="nav-item">
@@ -65,7 +69,7 @@ const NavBar = ({
             onClick={() => scrollToSection("projects")}
             className="nav-link"
           >
-            Projetos <FaFolderOpen className="md:hidden" size={20} />
+            {t("Projetos")} <FaFolderOpen className="md:hidden" size={20} />
           </button>
         </li>
         <li className="nav-item">
@@ -73,7 +77,7 @@ const NavBar = ({
             onClick={() => scrollToSection("services")}
             className="nav-link"
           >
-            Serviços <FaBriefcase className="md:hidden" size={20} />
+            {t("Serviços")} <FaBriefcase className="md:hidden" size={20} />
           </button>
         </li>
         <li className="nav-item">
@@ -81,7 +85,7 @@ const NavBar = ({
             onClick={() => scrollToSection("contact")}
             className="nav-link"
           >
-            Contate-Me <IoIosSend className="md:hidden" size={25} />
+            {t("Contate-Me")} <IoIosSend className="md:hidden" size={25} />
           </button>
         </li>
 
