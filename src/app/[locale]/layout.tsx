@@ -28,7 +28,7 @@ export default async function LocaleLayout({
 }>) {
   const messages = await getMessages();
   return (
-    <html lang={locale}>
+    <html lang={locale === "en" ? "en" : "pt-BR"}>
       <body className={cn(`antialiased`, inter.className)}>
         <NextIntlClientProvider messages={messages}>
           <Header />

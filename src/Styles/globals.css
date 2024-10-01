@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .nav-item {
-  @apply text-darkScheme-primary dark:text-lightScheme-primary cursor-pointer md:h-full flex;
+  @apply text-darkScheme-primary dark:text-lightScheme-primary cursor-pointer lg:h-full flex;
 }
 
 .nav-link {
-  @apply flex items-center gap-2 p-5 outline-none w-full h-full md:p-0 after:w-0 after:h-1 after:bg-darkScheme-primary dark:after:bg-lightScheme-primary relative after:absolute after:bottom-0 after:left-0 md:hover:after:w-full after:transition-all after:ease-in-out after:duration-700 hover:after:w-0;
+  @apply flex items-center gap-2 p-5 outline-none w-full h-full lg:p-0 after:w-0 after:h-1 after:bg-darkScheme-primary dark:after:bg-lightScheme-primary relative after:absolute after:bottom-0 after:left-0 lg:hover:after:w-full after:transition-all after:ease-in-out after:duration-700 hover:after:w-0;
 }
 
 html::-webkit-scrollbar {
@@ -136,5 +136,5 @@ body {
 }
 
 .paragraph {
-  @apply dark:text-lightScheme-tertiary text-darkScheme-primary text-justify text-sm md:max-w-[85%] lg:text-base;
+  @apply dark:text-lightScheme-tertiary text-darkScheme-primary text-justify text-sm lg:max-w-[85%] lg:text-base;
 }

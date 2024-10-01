@@ -16,11 +16,11 @@ const WelcomeText = () => {
   };
 
   return (
-    <section className="w-full h-max flex flex-col items-center md:flex-row-reverse">
-      <div className="h-full w-full md:w-2/4 lg:w-2/5 flex items-center justify-center">
+    <section className="w-full h-max flex flex-col items-center lg:flex-row-reverse">
+      <div className="h-full w-full md:w-3/4 lg:w-2/5 flex items-center justify-center">
         <ImageFlip />
       </div>
-      <div className="flex w-full flex-col gap-1 mt-8 md:mt-0">
+      <div className="flex w-full flex-col gap-1 mt-8 lg:mt-0">
         <TitleAnimated />
 
         <p className="paragraph mt-2">{t("descricao")}</p>

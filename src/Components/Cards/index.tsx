@@ -1,12 +1,11 @@
 "use client";
 import { offeredService, ProjectType, SkillName } from "@/Types";
 import ImageComponent from "../Image";
-import { FaExternalLinkAlt, FaEye } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { Github } from "lucide-react";
 import { Dispatch, SetStateAction } from "react";
-
-import {} from "lucide-react";
 import ServiceIcon from "../ServiceIcon";
+import { MdOutlineOndemandVideo } from "react-icons/md";
 
 const ProjectCard = ({
   project,
@@ -26,18 +25,18 @@ const ProjectCard = ({
 
   return (
     <div
-      className={`w-full h-full dark:bg-darkScheme-tertiary bg-opacity-30 rounded-xl shadow-custom md:flex md:${
+      className={`w-full h-full dark:bg-darkScheme-tertiary bg-opacity-30 rounded-xl shadow-custom lg:flex lg:${
         project.isLeftImage && "flex-row-reverse"
       } xl:!min-h-[385px]`}
     >
       {/* Image Section */}
-      <div className="relative dark:bg-lightScheme-tertiary bg-darkScheme-tertiary !bg-opacity-10 dark:!bg-opacity-30  rounded-t-xl p-5 md:w-1/2 flex !items-center justify-center ">
+      <div className="relative dark:bg-lightScheme-tertiary bg-darkScheme-tertiary !bg-opacity-10 dark:!bg-opacity-30  rounded-t-xl p-5 lg:w-1/2 flex !items-center justify-center ">
         <button
           className="w-full h-max flex justify-center items-center relative"
           onClick={showVideoApplication}
         >
           {/* Image with hover effect */}
-          <div className="md:hover:scale-125 group relative transition-all ease-in-out duration-500 w-full max-h-[200px] md:max-w-[400px] md:max-h-[200px] lg:max-w-[400px] lg:max-h-[250px]">
+          <div className="lg:hover:scale-125 group relative transition-all ease-in-out duration-500 w-full max-h-[200px] lg:max-w-[400px] lg:max-h-[200px] ">
             <ImageComponent
               alt={project.image.alt}
               className={`rounded-xl border-none w-full max-h-[200px] transition-transform ease-in-out duration-500`}
@@ -47,18 +46,21 @@ const ProjectCard = ({
             <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all ease-in-out duration-500 rounded-xl"></div>
             {/* Eye icon */}
             <span className="transition-opacity ease-in-out duration-500 cursor-pointer absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-              <FaEye className="size-5 text-complementary-white" size={30} />
+              <MdOutlineOndemandVideo
+                className="size-5 text-complementary-white"
+                size={30}
+              />
             </span>
           </div>
         </button>
       </div>
 
       {/* Project Details Section */}
-      <div className="p-5 md:w-1/2">
+      <div className="p-5 lg:p-16 lg:w-1/2">
         <p className="first-letter:uppercase text-2xl lg:text-4xl">
           {project.title}
         </p>
-        <p className="paragraph mt-4">{project.description}</p>
+        <p className="paragraph lg:!max-w-full mt-4">{project.description}</p>
 
         {/* Skills */}
         <div className="mt-6 flex gap-2 flex-wrap">
@@ -80,14 +82,20 @@ const ProjectCard = ({
               href={project.urlDeploy}
               target="_blank"
             >
-              <FaExternalLinkAlt className="size-5" size={18} />
+              <FaExternalLinkAlt
+                className="size-5 text-complementary-lightGreen"
+                size={18}
+              />
             </a>
           ) : (
             <button
               onClick={showVideoApplication}
               className="hover:text-complementary-lightGreen transition-all ease-in-out duration-500 cursor-pointer hover:scale-125"
             >
-              <FaEye className="size-5" size={18} />
+              <MdOutlineOndemandVideo
+                className="size-6 text-complementary-lightGreen"
+                size={18}
+              />
             </button>
           )}
 
@@ -106,7 +114,7 @@ const ProjectCard = ({
 
 export const ServiceCard = ({ service }: { service: offeredService }) => {
   return (
-    <div className="w-11/12 md:w-4/5 h-[300px] md:h-[400px] xl:h-[300px] bg-white dark:bg-complementary-blackv2 rounded-xl p-5 flex flex-col items-center justify-around text-xl transition-all ease-in-out duration-300 md:hover:scale-110 !cursor-pointer shadow-custom">
+    <div className="w-11/12 lg:w-4/5 h-[300px] lg:h-[400px] xl:h-[300px] bg-white dark:bg-complementary-blackv2 rounded-xl p-5 flex flex-col items-center justify-around text-xl transition-all ease-in-out duration-300 lg:hover:scale-110 !cursor-pointer shadow-custom">
       <ServiceIcon icon={service.title} />
       <p className="justify-center text-center text-complementary-lightGreen">
         {service.title}

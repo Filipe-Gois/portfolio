@@ -21,7 +21,7 @@ export const ModalVideoProjects = ({
 }: ModalProps) => {
   return (
     <Dialog onOpenChange={setIsOpen} open={isOpen}>
-      <DialogContent className="w-[85%] md:max-w-xl lg:max-w-4xl xl:max-w-7xl p-10 bg-lightScheme-primary dark:bg-darkScheme-primary border-lightScheme-primary">
+      <DialogContent className="w-[85%] lg:max-w-xl lg:max-w-4xl xl:max-w-7xl p-10 bg-lightScheme-primary dark:bg-darkScheme-primary border-lightScheme-primary">
         <DialogTitle className="text-center">
           {selectedProject ? selectedProject.title : ""}
         </DialogTitle>

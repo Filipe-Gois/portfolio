@@ -15,7 +15,7 @@ const MenuMobile = ({
   const handleToggle = () => setIsNavbarVisible(!isNavbarVisible);
 
   return (
-    <label className="hamburger cursor-pointer md:hidden">
+    <label className="hamburger cursor-pointer lg:hidden">
       <input
         ref={menuRef}
         onChange={handleToggle}

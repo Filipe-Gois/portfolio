@@ -45,7 +45,7 @@ export const ImageFlip = () => {
   };
 
   return (
-    <Slider className="w-full md:w-3/4" settings={settingsSlides}>
+    <Slider className="w-full lg:w-3/4" settings={settingsSlides}>
       <Slide>
         <ImageComponent
           className=""

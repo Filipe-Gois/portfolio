@@ -44,16 +44,16 @@ const NavBar = ({
     <nav
       data-isnavbarvisible={isNavbarVisible}
       className="h-[calc(100vh-3.5rem)] w-[65vw] absolute top-14 -right-[65vw] data-[isnavbarvisible=true]:right-0 transition-all ease-in-out duration-700 pt-2 bg-gradient-to-bl from-lightScheme-primary to-lightScheme-tertiary dark:from-darkScheme-primary to bg-darkScheme-tertiary
-      md:static md:h-full md:w-max md:pt-0  md:to-transparent md:from-transparent md:dark:to-transparent md:dark:from-transparent md:bg-transparent md:dark:bg-transparent
+      lg:static lg:h-full lg:w-max lg:pt-0  lg:to-transparent lg:from-transparent lg:dark:to-transparent lg:dark:from-transparent lg:bg-transparent lg:dark:bg-transparent
       "
     >
-      <ul className="h-full w-full gap-3 flex flex-col items-end px-[5%]  md:flex-row md:w-max md:px-0">
+      <ul className="h-full w-full gap-3 flex flex-col items-end px-[5%]  lg:flex-row lg:w-max lg:px-0">
         <li className="nav-item">
           <button
             onClick={() => scrollToSection("about-me")}
             className="nav-link"
           >
-            {t("Sobre Mim")} <FaUserAlt className="md:hidden" size={20} />
+            {t("Sobre Mim")} <FaUserAlt className="lg:hidden" size={20} />
           </button>
         </li>
         <li className="nav-item">
@@ -61,7 +61,7 @@ const NavBar = ({
             onClick={() => scrollToSection("skills")}
             className="nav-link"
           >
-            {t("Tecnologias")} <FaCode className="md:hidden" size={20} />
+            {t("Tecnologias")} <FaCode className="lg:hidden" size={20} />
           </button>
         </li>
         <li className="nav-item">
@@ -69,7 +69,7 @@ const NavBar = ({
             onClick={() => scrollToSection("projects")}
             className="nav-link"
           >
-            {t("Projetos")} <FaFolderOpen className="md:hidden" size={20} />
+            {t("Projetos")} <FaFolderOpen className="lg:hidden" size={20} />
           </button>
         </li>
         <li className="nav-item">
@@ -77,7 +77,7 @@ const NavBar = ({
             onClick={() => scrollToSection("services")}
             className="nav-link"
           >
-            {t("Serviços")} <FaBriefcase className="md:hidden" size={20} />
+            {t("Serviços")} <FaBriefcase className="lg:hidden" size={20} />
           </button>
         </li>
         <li className="nav-item">
@@ -85,14 +85,14 @@ const NavBar = ({
             onClick={() => scrollToSection("contact")}
             className="nav-link"
           >
-            {t("Contate-Me")} <IoIosSend className="md:hidden" size={25} />
+            {t("Contate-Me")} <IoIosSend className="lg:hidden" size={25} />
           </button>
         </li>
 
         <li className="flex justify-center">
           <ThemeToggle />
         </li>
-        <li className="flex justify-center items-center md:h-full">
+        <li className="flex justify-center items-center lg:h-full">
           <LanguageToggle />
         </li>
       </ul>

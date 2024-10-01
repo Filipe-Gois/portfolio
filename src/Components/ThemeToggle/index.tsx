@@ -5,7 +5,8 @@ import Cookies from "js-cookie";
 const ThemeToggle = () => {
   const [theme, setTheme] = useState<string>(() => {
     // Verifica se o tema já está armazenado nos cookies
-    const savedTheme = Cookies.get("theme");
+    const savedTheme = window.localStorage.getItem("theme");
+    // const savedTheme = Cookies.get("theme");
     return savedTheme || "light"; // Se não houver tema salvo, retorna "light"
   });
 
@@ -13,10 +14,12 @@ const ThemeToggle = () => {
     // Aplica o tema no <html>
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
-      Cookies.set("theme", "dark");
+      window.localStorage.setItem("theme", "dark");
+      // Cookies.set("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
-      Cookies.set("theme", "light");
+      window.localStorage.setItem("theme", "light");
+      // Cookies.set("theme", "light");
     }
   }, [theme]);
 
@@ -26,7 +29,7 @@ const ThemeToggle = () => {
   return (
     <label
       htmlFor="themeToggle"
-      className="themeToggle st-sunMoonThemeToggleBtn mr-2 text-darkScheme-primary dark:text-lightScheme-primary md:mr-0 md:my-[30%]"
+      className="themeToggle st-sunMoonThemeToggleBtn mr-2 text-darkScheme-primary dark:text-lightScheme-primary lg:mr-0 lg:my-[30%]"
     >
       <input
         onChange={toggleTheme}
