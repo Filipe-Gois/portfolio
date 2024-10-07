@@ -29,6 +29,7 @@ const Skills = () => {
     "Azure DevOps",
     "Microsoft Azure",
     "Trello",
+    "Cypress",
   ];
 
   const uniqueSkills = new Set<SkillName>(skills);

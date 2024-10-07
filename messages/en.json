@@ -6,9 +6,9 @@
     "Serviços": "Services",
     "Contate-Me": "Contact Me"
   },
-  "WelcomeText": {
+  "apresentacao": {
     "titulo": "fefe",
-    "descricao": "I am a Full-Stack developer focusing on {strongMobile}, always looking to improve every detail of my code. My passion for technology goes beyond the screens. I am constantly exploring new languages and tools, such as {strongDartFlutter}, and I also have experience with {strongReactNative}.",
+    "descricao": "I am a Full-Stack developer focusing on mobile development, always looking to improve every detail of my code. My passion for technology goes beyond the screens. I am constantly exploring new languages and tools, such as Dart and Flutter, and I also have experience with React Native.",
     "baixarcurriculo": "Download CV",
     "saopaulobrasil": "São Paulo, Brazil.",
     "disponIvelparaprojetos": "Available for projects."
@@ -17,7 +17,7 @@
   "WelcomeTopic": {
     "titulo": "About Me",
     "sub-titulo": "Want to know more about me?",
-    "descricao": "Hey there, how are you? I'm Filipe Góis, I'm 17 years old, and my journey in the world of programming began when I enrolled in the <strong>Technical Course in Systems Development</strong> at SENAI when I was 16. It was an experience that opened my eyes to the world of technology, and since then, I have been dedicated to improving my skills. Currently, I am transitioning to Flutter. Besides programming, I am passionate about <strong>sports!</strong> I love playing basketball, volleyball, and I regularly lift weights. These activities help me maintain focus and discipline in both my studies and personal life. I believe that the balance between body and mind is essential to achieve great results. I plan to pursue <strong>Software Engineering</strong> as my degree and dream of <strong>working abroad</strong>, exploring new cultures and opportunities in the technology field. Every project I undertake brings me closer to my goals, and I am always looking to learn something new and evolve professionally."
+    "descricao": "Hey there, how are you? I'm Filipe Góis, I'm 17 years old, and my journey in the world of programming began when I enrolled in the Technical Course in Systems Development at SENAI when I was 16. It was an experience that opened my eyes to the world of technology, and since then, I have been dedicated to improving my skills. Currently, I am transitioning to Flutter. Besides programming, I am passionate about sports! I love playing basketball, volleyball, and I regularly lift weights. These activities help me maintain focus and discipline in both my studies and personal life. I believe that the balance between body and mind is essential to achieve great results. I plan to pursue Software Engineering as my degree and dream of working abroad, exploring new cultures and opportunities in the technology field. Every project I undertake brings me closer to my goals, and I am always looking to learn something new and evolve professionally."
   },
 
   "Skills": {
@@ -37,6 +37,9 @@
     },
     "eventplus": {
       "descricao": "Event Plus is an intuitive and robust web application focused on the complete management of institutional events. The platform enables effective planning, organization, and management of events, optimizing the process from creation to completion."
+    },
+    "techconnect": {
+      "descricao": "Tech Connect is a social network that brings technology enthusiasts together in a collaborative digital space. It fosters knowledge sharing, networking, and project development, connecting developers and innovators. With an inclusive environment, Tech Connect promotes continuous learning and technological advancement."
     }
   },
 

@@ -15,7 +15,6 @@ const config: Config = {
         custom: "3px 3px 3px 2px rgba(0, 0, 0, 0.3)",
       },
       borderRadius: {
-        lg: "var(--radius)",
         lg: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },

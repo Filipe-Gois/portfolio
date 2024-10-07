@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import Footer from "@/components/Footer";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { ThemeProvider } from "next-themes";
 
 const inter = Inter({
   weight: ["400", "700"],
@@ -15,8 +16,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Filipe Góis",
-  description: "Meu Portfólio desenvolvedor full-stack.",
+  title: "F. Góis",
+  description: "Meu Portfólio como desenvolvedor full-stack.",
 };
 
 export default async function LocaleLayout({
@@ -27,14 +28,17 @@ export default async function LocaleLayout({
   params: { locale: string };
 }>) {
   const messages = await getMessages();
+
   return (
     <html lang={locale === "en" ? "en" : "pt-BR"}>
       <body className={cn(`antialiased`, inter.className)}>
-        <NextIntlClientProvider messages={messages}>
-          <Header />
-          {children}
-          <Footer />
-        </NextIntlClientProvider>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+          <NextIntlClientProvider messages={messages}>
+            <Header />
+            {children}
+            <Footer />
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

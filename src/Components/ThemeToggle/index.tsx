@@ -1,35 +1,15 @@
-import { useEffect, useState } from "react";
 import "./style.css";
-import Cookies from "js-cookie";
+import { useTheme } from "next-themes";
 
 const ThemeToggle = () => {
-  const [theme, setTheme] = useState<string>(() => {
-    // Verifica se o tema já está armazenado nos cookies
-    const savedTheme = window.localStorage.getItem("theme");
-    // const savedTheme = Cookies.get("theme");
-    return savedTheme || "light"; // Se não houver tema salvo, retorna "light"
-  });
+  const { setTheme, theme } = useTheme();
 
-  useEffect(() => {
-    // Aplica o tema no <html>
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-      window.localStorage.setItem("theme", "dark");
-      // Cookies.set("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      window.localStorage.setItem("theme", "light");
-      // Cookies.set("theme", "light");
-    }
-  }, [theme]);
-
-  const toggleTheme = () =>
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+  const toggleTheme = () => setTheme(theme === "light" ? "dark" : "light");
 
   return (
     <label
       htmlFor="themeToggle"
-      className="themeToggle st-sunMoonThemeToggleBtn mr-2 text-darkScheme-primary dark:text-lightScheme-primary lg:mr-0 lg:my-[30%]"
+      className="no-transition themeToggle st-sunMoonThemeToggleBtn mr-2 text-darkScheme-primary dark:text-lightScheme-primary lg:mr-0 lg:my-[30%]"
     >
       <input
         onChange={toggleTheme}

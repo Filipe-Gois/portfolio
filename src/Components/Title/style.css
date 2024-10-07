@@ -21,6 +21,29 @@
   background-color: var(--backGround);
 }
 
+.titulo-animado-en span {
+  position: relative;
+}
+
+.titulo-animado-en span::before {
+  content: "";
+  color: #0acc82;
+  animation: palavras-en 20s infinite;
+}
+
+.titulo-animado-en span::after {
+  content: "";
+  position: absolute;
+  height: 110%;
+  max-height: 40px;
+  border-left: 2px solid #0acc82;
+  right: -10px;
+  opacity: 1;
+  animation: cursor 20s infinite, digitacao 20s steps(15) infinite;
+  width: calc(100% + 15px);
+  background-color: var(--backGround);
+}
+
 @keyframes digitacao {
   10%,
   15%,
@@ -53,7 +76,6 @@
     border-left: 2px solid var(--primary);
   }
 }
-
 @keyframes palavras {
   0%,
   20% {
@@ -74,5 +96,28 @@
   81%,
   100% {
     content: "Seja bem-vindo :)";
+  }
+}
+
+@keyframes palavras-en {
+  0%,
+  20% {
+    content: "Hello, my name is Filipe";
+  }
+  21%,
+  40% {
+    content: "I am 17 years old";
+  }
+  41%,
+  60% {
+    content: "I am a mobile developer";
+  }
+  61%,
+  80% {
+    content: "I am learning Flutter";
+  }
+  81%,
+  100% {
+    content: "Welcome :)";
   }
 }

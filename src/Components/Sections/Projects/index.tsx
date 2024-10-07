@@ -5,6 +5,7 @@ import { ProjectType } from "@/Types";
 import FitTrack from "/public/Images/Projects/FitTrack/fittrack-logo.png";
 import EventPlus from "/public/Images/Projects/EventPlus/eventplus-logo.png";
 import VitalHub from "/public/Images/Projects/VitalHub/vitalhub-logo.png";
+import TechConnect from "/public/Images/Projects/TechConnect/techconnect-logo.png";
 import { useState } from "react";
 import { ModalVideoProjects } from "@/components/Modal";
 import { useTranslations } from "next-intl";
@@ -76,6 +77,28 @@ const Projects = () => {
       urlRepository: "https://github.com/Filipe-Gois/eventplus-finalizado",
       title: "Event Plus",
       description: t("eventplus.descricao"),
+    },
+    {
+      urlVideoApplication: "",
+      urlDeploy: "",
+      skills: [
+        "Next.JS",
+        "TypeScript",
+        "TailWindCss",
+        "C#",
+        "SQL Server",
+        "Figma",
+        "Microsoft Azure",
+        "Git",
+        "Azure DevOps",
+      ],
+      image: {
+        alt: "Logo do projeto Tech Connect.",
+        src: TechConnect,
+      },
+      urlRepository: "https://github.com/Filipe-Gois/tech-connect",
+      title: "Tech Connect",
+      description: t("techconnect.descricao"),
     },
   ];
   const uniqueProjects = new Set<ProjectType>(projects);

@@ -80,3 +80,8 @@
     transform: scale(1);
   }
 }
+
+.no-transition {
+  transition: none !important;
+  opacity: 1 !important; /* ou 0, dependendo do seu caso */
+}

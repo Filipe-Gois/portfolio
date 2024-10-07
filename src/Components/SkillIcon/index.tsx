@@ -1,4 +1,8 @@
-import { TbBrandReactNative, TbBrandFlutter } from "react-icons/tb";
+import {
+  TbBrandReactNative,
+  TbBrandFlutter,
+  TbBrandCypress,
+} from "react-icons/tb";
 import { IoLogoHtml5, IoLogoFigma } from "react-icons/io5";
 import { IoLogoCss3 } from "react-icons/io";
 import { FaSass, FaTrello, FaGitAlt } from "react-icons/fa";
@@ -39,7 +43,8 @@ const iconMap: Record<SkillName, JSX.Element> = {
   "Azure DevOps": <SiAzuredevops size={iconSize} />,
   "Microsoft Azure": <SiMicrosoftazure size={iconSize} />,
   Trello: <FaTrello size={iconSize} />,
-  "Styled Components": <SiStyledcomponents />,
+  "Styled Components": <SiStyledcomponents size={iconSize} />,
+  Cypress: <TbBrandCypress size={iconSize} />,
 };
 
 type SkillIconProps = {

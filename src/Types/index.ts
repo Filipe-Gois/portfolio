@@ -42,7 +42,8 @@ export type SkillName =
   | "Azure DevOps"
   | "Microsoft Azure"
   | "Trello"
-  | "Styled Components";
+  | "Styled Components"
+  | "Cypress";
 
 export type offeredServiceTitle =
   | "Desenvolvimento de Aplicativos Móveis"

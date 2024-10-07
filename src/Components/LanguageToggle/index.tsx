@@ -5,30 +5,25 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { useState } from "react";
-import Cookies from "js-cookie";
+import { useRouter, usePathname } from "next/navigation";
 
 const LanguageToggle = () => {
-  const [currentLanguage, setCurrentLanguage] = useState<string>(() => {
-    const savedLanguage = Cookies.get("language");
-    return savedLanguage || "PT";
-  });
+  const router = useRouter();
 
-  const toggleLanguage = () => {
-    setCurrentLanguage((language) => (language === "PT" ? "EN" : "PT"));
+  const pathname = usePathname().replace("/", "") as "pt" | "en";
+
+  const toggleLanguage = (language: "pt" | "en") => {
+    router.replace(`/${language}`);
   };
 
   return (
-    <Select>
+    <Select value={pathname} onValueChange={toggleLanguage}>
       <SelectTrigger className="w-full mr-4 bg-transparent gap-2">
-        <SelectValue placeholder={currentLanguage} defaultValue={"SLA"} />
+        <SelectValue placeholder={pathname} defaultValue={"pt"} />
       </SelectTrigger>
-      <SelectContent
-        onChange={toggleLanguage}
-        className="dark:bg-darkScheme-primary mr-4"
-      >
-        <SelectItem value="PT">PT</SelectItem>
-        <SelectItem value="EN">EN</SelectItem>
+      <SelectContent className="dark:bg-darkScheme-primary mr-4">
+        <SelectItem value="pt">PT</SelectItem>
+        <SelectItem value="en">EN</SelectItem>
       </SelectContent>
     </Select>
   );
