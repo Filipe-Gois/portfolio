@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "Sobre Mim": "Sobre Mim",
+    "Tecnologias": "Tecnologias",
+    "Projetos": "Projetos",
+    "Serviços": "Serviços",
+    "Contate-Me": "Contate-Me"
+  },
+
+  "apresentacao": {
+    "titulo": "fefe",
+    "descricao": "Sou um desenvolvedor Full-Stack com foco em desenvolvimento mobile. Estou constantemente explorando novas linguagens e ferramentas, como o Dart e Flutter, tendo experiência também em React Native.",
+    "baixarcurriculo": "Baixar Currículo",
+    "saopaulobrasil": "São Paulo, Brasil.",
+    "disponIvelparaprojetos": "Disponível para projetos."
+  },
+
+  "WelcomeTopic": {
+    "titulo": "Sobre mim",
+    "sub-titulo": "Quer saber mais sobre mim ?",
+    "descricao": "E aí, tudo bem? Sou Filipe Góis, tenho 17 anos e minha jornada no mundo da programação começou quando entrei no curso técnico em Desenvolvimento de Sistemas no SENAI aos 16. Foi uma experiência que abriu meus olhos para o universo da tecnologia, e desde então, venho me dedicando a melhorar minhas habilidades. Atualmente, estou migrando para Flutter. Além da programação, sou apaixonado por esportes! Adoro jogar basquete, vôlei e faço musculação regularmente. Essas atividades me ajudam a manter o foco e a disciplina, tanto nos meus estudos quanto na vida pessoal. Acredito que o equilíbrio entre corpo e mente é essencial para alcançar grandes resultados. Pretendo cursar Engenharia de Software como graduação e tenho o sonho de trabalhar fora do Brasil, explorando novas culturas e oportunidades na área de tecnologia. Cada projeto que faço me aproxima mais dos meus objetivos, e estou sempre em busca de aprender algo novo e evoluir profissionalmente."
+  },
+
+  "Skills": {
+    "titulo": "Tecnologias"
+  },
+
+  "Projects": {
+    "titulo": "Projetos",
+    "sub-titulo": "Alguns dos projetos que construí:",
+    "fittrack": {
+      "descricao": "FitTrack é um aplicativo móvel desenvolvido para facilitar o gerenciamento integrado de treinos e alimentação, ajudando os usuários a definirem metas de saúde e bem-estar. A plataforma oferece uma solução completa ao acompanhar tanto o progresso físico quanto a dieta em um único lugar."
+    },
+    "vitalhub": {
+      "descricao": "O VitalHub é uma plataforma móvel que simplifica a interação entre médicos e pacientes, centralizando agendamentos, consultas e comunicação. A solução permite o agendamento eficiente de consultas, visualização de trajetos até a clínica via GPS e contato direto com os médicos, otimizando a experiência de ambos e eliminando a fragmentação no processo."
+    },
+    "eventplus": {
+      "descricao": "O Event Plus é uma aplicação web intuitiva e robusta voltada para o gerenciamento completo de eventos de instituições. A plataforma permite o planejamento, organização e gerenciamento de eventos de forma eficaz, otimizando o processo desde a criação até a finalização."
+    },
+    "techconnect": {
+      "descricao": "O Tech Connect é uma rede social que une entusiastas da tecnologia em um espaço digital colaborativo. A plataforma facilita o compartilhamento de conhecimento, networking e desenvolvimento de projetos, conectando desenvolvedores e inovadores. Com um ambiente inclusivo, o Tech Connect promove o aprendizado contínuo e o avanço tecnológico."
+    }
+  },
+
+  "Services": {
+    "titulo": "Serviços",
+    "sub-titulo": "O que posso fazer por você:",
+    "mobile": {
+      "titulo": "Desenvolvimento de Aplicativos Móveis",
+      "descricao": "Desenvolvo aplicativos para Android e iOS utilizando React Native, com interfaces modernas e funcionalidades eficientes."
+    },
+    "web": {
+      "titulo": "Criação de Sites",
+      "descricao": "Transformo suas ideias em um site profissional e atrativo, focado em transmitir sua mensagem de forma clara e eficaz."
+    },
+    "backend": {
+      "titulo": "Desenvolvimento de APIs e Back-end",
+      "descricao": "Crio APIs robustas e escaláveis utilizando C#, integradas com bancos de dados como SQL Server e MongoDB."
+    },
+    "cloud": {
+      "titulo": "Integração e Automação com Microsoft Azure",
+      "descricao": "Implemento soluções na nuvem, configurando pipelines de CI/CD com Azure DevOps, além de automação de infraestrutura e serviços."
+    },
+    "performance": {
+      "titulo": "Otimização de Performance Web",
+      "descricao": "Melhoro o desempenho de sites e aplicativos, garantindo uma navegação rápida e eficiente, otimizando para SEO e acessibilidade."
+    },
+    "design": {
+      "titulo": "Design de Interfaces Responsivas",
+      "descricao": "Crio interfaces intuitivas e responsivas com React, Next.js e Tailwind CSS, que se adaptam perfeitamente a qualquer dispositivo."
+    },
+    "devops": {
+      "titulo": "Soluções de DevOps",
+      "descricao": "Configuro pipelines de desenvolvimento contínuo com Git e Azure DevOps, facilitando a integração de novos recursos com segurança."
+    },
+    "project_management": {
+      "titulo": "Gerenciamento de Projetos",
+      "descricao": "Gerencio projetos de software utilizando Trello e metodologias ágeis, garantindo organização e prazos cumpridos."
+    },
+    "database": {
+      "titulo": "Integração de Banco de Dados",
+      "descricao": "Realizo a integração e otimização de bancos de dados relacionais e não-relacionais, como SQL Server e MongoDB, para armazenamento eficiente de dados."
+    },
+    "fullstack": {
+      "titulo": "Desenvolvimento Full-Stack",
+      "descricao": "Crio aplicações completas, desde o front-end até o back-end, utilizando tecnologias como React, C#, MongoDB, e SQL Server."
+    },
+    "support": {
+      "titulo": "Manutenção e Suporte Técnico",
+      "descricao": "Ofereço suporte contínuo para garantir que seus sistemas e aplicativos funcionem de maneira estável e segura."
+    }
+  },
+
+  "Contact": {
+    "titulo": "Contate-me",
+    "sub-titulo": "O que vem a seguir? Sinta-se à vontade para entrar em contato comigo se estiver procurando um desenvolvedor ou tiver alguma dúvida.",
+    "descricao": "Você pode me encontrar nessas plataformas:"
+  }
+}

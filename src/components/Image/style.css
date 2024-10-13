@@ -1,0 +1,37 @@
+.float-img {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px; /* ajuste conforme necessário */
+  height: auto;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image-container::after {
+  content: "";
+  position: absolute;
+  top: 20%; /* começando 20% de cima */
+  bottom: 0;
+  right: 0;
+  width: 8px; /* espessura da borda */
+  height: 80%; /* altura da borda (80% da altura da imagem) */
+  background-color: black; /* cor da borda */
+}

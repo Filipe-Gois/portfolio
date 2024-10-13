@@ -1,0 +1,27 @@
+/* .primary-image {
+  position: relative;
+  border: 8px solid white;
+  width: 100% !important;
+  border-top: 0px solid white !important;
+  padding: 6px;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.primary-image::before,
+.primary-image::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 80%;
+  background-color: yellow;
+  top: 10%;
+}
+
+.primary-image::before {
+  left: 0;
+}
+
+.primary-image::after {
+  right: 0;
+} */

@@ -1,0 +1,101 @@
+{
+  "nav": {
+    "Sobre Mim": "About Me",
+    "Tecnologias": "Technologies",
+    "Projetos": "Projects",
+    "Serviços": "Services",
+    "Contate-Me": "Contact Me"
+  },
+  "apresentacao": {
+    "titulo": "fefe",
+    "descricao": "I am a Full-Stack developer focusing on mobile development, always looking to improve every detail of my code. I am constantly exploring new languages and tools, such as Dart and Flutter, and I also have experience with React Native.",
+    "baixarcurriculo": "Download CV",
+    "saopaulobrasil": "São Paulo, Brazil.",
+    "disponIvelparaprojetos": "Available for projects."
+  },
+
+  "WelcomeTopic": {
+    "titulo": "About Me",
+    "sub-titulo": "Want to know more about me?",
+    "descricao": "Hey there, how are you? I'm Filipe Góis, I'm 17 years old, and my journey in the world of programming began when I enrolled in the Technical Course in Systems Development at SENAI when I was 16. It was an experience that opened my eyes to the world of technology, and since then, I have been dedicated to improving my skills. Currently, I am transitioning to Flutter. Besides programming, I am passionate about sports! I love playing basketball, volleyball, and I regularly lift weights. These activities help me maintain focus and discipline in both my studies and personal life. I believe that the balance between body and mind is essential to achieve great results. I plan to pursue Software Engineering as my degree and dream of working abroad, exploring new cultures and opportunities in the technology field. Every project I undertake brings me closer to my goals, and I am always looking to learn something new and evolve professionally."
+  },
+
+  "Skills": {
+    "titulo": "Technologies"
+  },
+
+  "Projects": {
+    "titulo": "Projects",
+    "sub-titulo": "Some of the projects I built:",
+
+    "fittrack": {
+      "descricao": "FitTrack is a mobile app developed to facilitate the integrated management of workouts and nutrition, helping users set health and wellness goals. The platform offers a comprehensive solution by tracking both physical progress and diet in one place."
+    },
+
+    "vitalhub": {
+      "descricao": "VitalHub is a mobile platform that simplifies the interaction between doctors and patients by centralizing appointments, consultations, and communication. The solution allows for efficient appointment scheduling, GPS route visualization to the clinic, and direct contact with doctors, optimizing the experience for both and eliminating fragmentation in the process."
+    },
+    "eventplus": {
+      "descricao": "Event Plus is an intuitive and robust web application focused on the complete management of institutional events. The platform enables effective planning, organization, and management of events, optimizing the process from creation to completion."
+    },
+    "techconnect": {
+      "descricao": "Tech Connect is a social network that brings technology enthusiasts together in a collaborative digital space. It fosters knowledge sharing, networking, and project development, connecting developers and innovators. With an inclusive environment, Tech Connect promotes continuous learning and technological advancement."
+    }
+  },
+
+  "Services": {
+    "titulo": "Services",
+    "sub-titulo": "What I can do for you:",
+
+    "mobile": {
+      "titulo": "Mobile App Development",
+      "descricao": "I develop applications for Android and iOS using React Native, with modern interfaces and efficient functionalities."
+    },
+    "web": {
+      "titulo": "Website Creation",
+      "descricao": "I transform your ideas into a professional and attractive website, focused on conveying your message clearly and effectively."
+    },
+    "backend": {
+      "titulo": "API and Back-end Development",
+      "descricao": "I create robust and scalable APIs using C#, integrated with databases like SQL Server and MongoDB."
+    },
+    "cloud": {
+      "titulo": "Integration and Automation with Microsoft Azure",
+      "descricao": "I implement cloud solutions, configuring CI/CD pipelines with Azure DevOps, in addition to infrastructure and service automation."
+    },
+    "performance": {
+      "titulo": "Web Performance Optimization",
+      "descricao": "I enhance the performance of websites and applications, ensuring fast and efficient navigation, optimizing for SEO and accessibility."
+    },
+    "design": {
+      "titulo": "Responsive Interface Design",
+      "descricao": "I create intuitive and responsive interfaces with React, Next.js, and Tailwind CSS, which adapt perfectly to any device."
+    },
+    "devops": {
+      "titulo": "DevOps Solutions",
+      "descricao": "I configure continuous development pipelines with Git and Azure DevOps, facilitating the integration of new features securely."
+    },
+    "project_management": {
+      "titulo": "Project Management",
+      "descricao": "I manage software projects using Trello and agile methodologies, ensuring organization and timely delivery."
+    },
+    "database": {
+      "titulo": "Database Integration",
+      "descricao": "I perform integration and optimization of relational and non-relational databases, such as SQL Server and MongoDB, for efficient data storage."
+    },
+    "fullstack": {
+      "titulo": "Full-Stack Development",
+      "descricao": "I create complete applications, from front-end to back-end, using technologies like React, C#, MongoDB, and SQL Server."
+    },
+    "support": {
+      "titulo": "Maintenance and Technical Support",
+      "descricao": "I offer ongoing support to ensure your systems and applications function stably and securely."
+    }
+  },
+
+  "Contact": {
+    "titulo": "Contact Me",
+    "sub-titulo": "What’s next? Feel free to contact me if you are looking for a developer or have any questions.",
+    "descricao": "You can find me on these platforms:"
+  }
+}
