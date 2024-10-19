@@ -48,6 +48,7 @@ const WelcomeTopic = () => {
             {t("sub-titulo")}
           </SubTitle>
           <Paragraph
+            className="text-end"
             initial={{ opacity: 0, x: 200 }}
             whileInView={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 200 }}
