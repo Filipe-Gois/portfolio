@@ -11,8 +11,8 @@ const Skills = () => {
   const t = useTranslations("Skills");
 
   const skills: SkillName[] = [
-    "Flutter",
     "React Native",
+    "Flutter",
     "Dart",
     "TypeScript",
     "JavaScript",
