@@ -11,11 +11,11 @@ const Skills = () => {
   const t = useTranslations("Skills");
 
   const skills: SkillName[] = [
-    "React Native",
-    "Flutter",
     "Dart",
-    "TypeScript",
+    "Flutter",
+    "React Native",
     "JavaScript",
+    "TypeScript",
     "Next.JS",
     "React.JS",
     "HTML5",
@@ -29,8 +29,8 @@ const Skills = () => {
     "Git",
     "Azure DevOps",
     "Microsoft Azure",
-    "Trello",
     "Cypress",
+    "Trello",
   ];
 
   const uniqueSkills = new Set<SkillName>(skills);
