@@ -30,9 +30,8 @@ const ProjectCard = ({
   return (
     <motion.div
       {...rest}
-      className={`w-full h-full dark:bg-darkScheme-tertiary bg-opacity-30 rounded-xl shadow-custom lg:flex lg:${
-        project.isLeftImage && "flex-row-reverse"
-      } xl:!min-h-[385px]`}
+      className={`w-full h-full dark:bg-darkScheme-tertiary bg-opacity-30 rounded-xl shadow-custom lg:flex lg:${project.isLeftImage && "flex-row-reverse"
+        } xl:!min-h-[385px]`}
     >
       {/* Image Section */}
       <div className="relative dark:bg-lightScheme-tertiary bg-darkScheme-tertiary !bg-opacity-10 dark:!bg-opacity-30  rounded-xl p-5 lg:w-1/2 flex !items-center justify-center ">
@@ -76,10 +75,10 @@ const ProjectCard = ({
               window.innerWidth <= 1024 && project.isLeftImage
                 ? -100
                 : window.innerWidth <= 1024 && !project.isLeftImage
-                ? 100
-                : window.innerWidth >= 1024 && project.isLeftImage
-                ? -500
-                : 500,
+                  ? 100
+                  : window.innerWidth >= 1024 && project.isLeftImage
+                    ? -500
+                    : 500,
           }}
           whileInView={{ opacity: 1, x: 0 }}
           exit={{
@@ -88,10 +87,10 @@ const ProjectCard = ({
               window.innerWidth <= 1024 && project.isLeftImage
                 ? -100
                 : window.innerWidth <= 1024 && !project.isLeftImage
-                ? 100
-                : window.innerWidth >= 1024 && project.isLeftImage
-                ? -500
-                : 500,
+                  ? 100
+                  : window.innerWidth >= 1024 && project.isLeftImage
+                    ? -500
+                    : 500,
           }}
           transition={{ duration: 0.5 }}
           className="first-letter:uppercase text-2xl lg:text-4xl"
@@ -105,10 +104,10 @@ const ProjectCard = ({
               window.innerWidth <= 1024 && project.isLeftImage
                 ? -100
                 : window.innerWidth <= 1024 && !project.isLeftImage
-                ? 100
-                : window.innerWidth >= 1024 && project.isLeftImage
-                ? -500
-                : 500,
+                  ? 100
+                  : window.innerWidth >= 1024 && project.isLeftImage
+                    ? -500
+                    : 500,
           }}
           whileInView={{ opacity: 1, x: 0 }}
           exit={{
@@ -117,10 +116,10 @@ const ProjectCard = ({
               window.innerWidth <= 1024 && project.isLeftImage
                 ? -100
                 : window.innerWidth <= 1024 && !project.isLeftImage
-                ? 100
-                : window.innerWidth >= 1024 && project.isLeftImage
-                ? -500
-                : 500,
+                  ? 100
+                  : window.innerWidth >= 1024 && project.isLeftImage
+                    ? -500
+                    : 500,
           }}
           transition={{ duration: 0.5 }}
           className="paragraph lg:!max-w-full mt-4"
@@ -138,10 +137,10 @@ const ProjectCard = ({
                   window.innerWidth <= 1024 && project.isLeftImage
                     ? -100
                     : window.innerWidth <= 1024 && !project.isLeftImage
-                    ? 100
-                    : window.innerWidth >= 1024 && project.isLeftImage
-                    ? -200
-                    : 200,
+                      ? 100
+                      : window.innerWidth >= 1024 && project.isLeftImage
+                        ? -200
+                        : 200,
               }}
               whileInView={{ opacity: 1, x: 0 }}
               exit={{
@@ -150,10 +149,10 @@ const ProjectCard = ({
                   window.innerWidth <= 1024 && project.isLeftImage
                     ? -100
                     : window.innerWidth <= 1024 && !project.isLeftImage
-                    ? 100
-                    : window.innerWidth >= 1024 && project.isLeftImage
-                    ? -200
-                    : 200,
+                      ? 100
+                      : window.innerWidth >= 1024 && project.isLeftImage
+                        ? -200
+                        : 200,
               }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
               className="px-2 py-1 bg-complementary-gray/50 dark:bg-lightScheme-tertiary/50 rounded-full"
@@ -189,13 +188,13 @@ const ProjectCard = ({
             </button>
           )}
 
-          <a
+          {project.urlRepository && <a
             className="hover:text-complementary-lightGreen hover-animation"
             href={project.urlRepository}
             target="_blank"
           >
             <Github className="size-6" size={18} />
-          </a>
+          </a>}
         </div>
       </div>
     </motion.div>

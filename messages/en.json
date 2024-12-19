@@ -7,8 +7,7 @@
     "Contate-Me": "Contact Me"
   },
   "apresentacao": {
-    "titulo": "fefe",
-    "descricao": "I am a Full-Stack developer focusing on mobile development, always looking to improve every detail of my code. I am constantly exploring new languages and tools, such as Dart and Flutter, and I also have experience with React Native.",
+    "descricao": "I am a Full Stack Developer passionate about creating mobile solutions, focusing on robust, scalable, and intuitive applications. My goal is to transform ideas into impactful digital experiences, always striving to combine design, functionality, and innovation.",
     "baixarcurriculo": "Download CV",
     "saopaulobrasil": "São Paulo, Brazil.",
     "disponIvelparaprojetos": "Available for projects."
@@ -17,7 +16,7 @@
   "WelcomeTopic": {
     "titulo": "About Me",
     "sub-titulo": "Want to know more about me?",
-    "descricao": "Hello! I am Filipe Góis, a programming enthusiast. Born in 2007, I began my journey in the world of technology in 2023 when I enrolled in the Technical Course in Systems Development at SENAI. This experience opened my eyes to the numerous possibilities in the field, and since then, I have been dedicated to improving my skills. Currently, I am transitioning from mobile development with React Native to Flutter, always looking to stay updated and explore new tools. In addition to programming, I am a big fan of sports, such as basketball and volleyball, and I maintain a regular weightlifting routine. My goal is to pursue a degree in Software Engineering, and in the future, I would like to work abroad, experiencing new cultures and expanding my opportunities in the technology field."
+    "descricao": "I am driven by curiosity and a constant desire to learn. Currently, I am expanding my skills with Flutter, exploring cross-platform development to create even more versatile solutions. With experience in front-end and back-end development, I am dedicated to building projects that connect people, solve real-world problems, and promote positive impacts through technology."
   },
 
   "Skills": {
@@ -40,6 +39,9 @@
     },
     "techconnect": {
       "descricao": "Tech Connect is a social network that brings technology enthusiasts together in a collaborative digital space. It fosters knowledge sharing, networking, and project development, connecting developers and innovators. With an inclusive environment, Tech Connect promotes continuous learning and technological advancement."
+    },
+    "checkpoint": {
+      "descricao": "The Checkpoint Project is a web system that automates internship management, replacing manual processes with an efficient and gamified solution. It offers features like attendance tracking via login and logout, PDF report generation, and automated absence justifications, enhancing organization and engagement."
     }
   },
 

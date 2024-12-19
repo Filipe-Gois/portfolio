@@ -4,7 +4,6 @@ import { tv } from "tailwind-variants";
 import "./style.css";
 import { ImageType } from "@/Types";
 import { Slide, Slider } from "../Slider";
-import ImageFilipe from "../../../public/Images/Filipe.jpeg";
 
 const ImageStyle = tv({
   base: `rounded-lg w-full`,
@@ -18,9 +17,9 @@ const ImageStyle = tv({
 const ImageComponent = ({
   alt,
   className,
-  height,
+  height = 1000,
   src,
-  width,
+  width = 1000,
   isFloat = false,
 }: ImageType) => {
   return (
@@ -49,19 +48,19 @@ export const ImageFlip = () => {
       <Slide>
         <ImageComponent
           className=""
-          src={ImageFilipe}
+          src={"/Images/Filipe.jpeg"}
           alt={"Imagem de Filipe Góis, dono do portfólio."}
-          width={150}
-          height={250}
+          width={1000}
+          height={1000}
         />
       </Slide>
       <Slide>
         <ImageComponent
           className=""
-          src={ImageFilipe}
+          src={"/Images/filipe_avatar.png"}
           alt={"Imagem de Filipe Góis, dono do portfólio."}
-          width={150}
-          height={250}
+          width={1000}
+          height={1000}
         />
       </Slide>
     </Slider>

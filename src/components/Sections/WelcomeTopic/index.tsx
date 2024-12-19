@@ -1,6 +1,5 @@
 "use client";
 import ImageComponent from "@/components/Image";
-import ImageFilipe from "../../../../public/Images/Filipe.jpeg";
 import Tag from "@/components/Tag";
 import { useTranslations } from "next-intl";
 import { SectionContainer } from "@/components/Containers";
@@ -25,7 +24,7 @@ const WelcomeTopic = () => {
         >
           <ImageComponent
             isFloat
-            src={ImageFilipe}
+            src={"/Images/Filipe2.jpeg"}
             alt={"Imagem de Filipe Góis, dono do portfólio."}
             width={150}
             height={250}
@@ -48,7 +47,7 @@ const WelcomeTopic = () => {
             {t("sub-titulo")}
           </SubTitle>
           <Paragraph
-            className="text-end"
+            className="text-start md:text-end"
             initial={{ opacity: 0, x: 200 }}
             whileInView={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 200 }}

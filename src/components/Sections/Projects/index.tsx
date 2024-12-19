@@ -2,10 +2,6 @@
 import ProjectCard from "@/components/Cards";
 import Tag from "@/components/Tag";
 import { ProjectType } from "@/Types";
-import FitTrack from "/public/Images/Projects/FitTrack/fittrack-logo.png";
-import EventPlus from "/public/Images/Projects/EventPlus/eventplus-logo.png";
-import VitalHub from "/public/Images/Projects/VitalHub/vitalhub-logo.png";
-import TechConnect from "/public/Images/Projects/TechConnect/techconnect-logo.png";
 import { useState } from "react";
 import { ModalVideoProjects } from "@/components/Modal";
 import { useTranslations } from "next-intl";
@@ -14,7 +10,7 @@ import SubTitle from "@/components/SubTitle";
 
 const Projects = () => {
   const t = useTranslations("Projects");
-
+  const [isOpenModal, setIsOpenModal] = useState(false);
   const projects: ProjectType[] = [
     {
       urlVideoApplication: "/Videos/Projects/FitTrack/fittrack.mp4",
@@ -34,7 +30,7 @@ const Projects = () => {
       ],
       image: {
         alt: "Imagem da tela de login do aplicativo móvel FitTrack.",
-        src: FitTrack,
+        src: "/Images/Projects/FitTrack/fittrack-logo.png",
       },
     },
     {
@@ -52,7 +48,7 @@ const Projects = () => {
       ],
       image: {
         alt: "Logo do projeto Vital Hub.",
-        src: VitalHub,
+        src: "/Images/Projects/VitalHub/vitalhub-logo.png",
       },
       urlRepository: "https://github.com/Filipe-Gois/Vital-Hub",
       title: "Vital Hub",
@@ -74,7 +70,8 @@ const Projects = () => {
       ],
       image: {
         alt: "Logo do projeto Event Plus.",
-        src: EventPlus,
+        src: "/Images/Projects/EventPlus/eventplus-logo.png",
+
       },
       urlRepository: "https://github.com/Filipe-Gois/eventplus-finalizado",
       title: "Event Plus",
@@ -92,26 +89,45 @@ const Projects = () => {
         "Figma",
         "Microsoft Azure",
         "Git",
-        "Azure DevOps",
+        "Azure DevOps"
       ],
       image: {
         alt: "Logo do projeto Tech Connect.",
-        src: TechConnect,
+        src: "/Images/Projects/TechConnect/techconnect-logo.png",
       },
       urlRepository: "https://github.com/Filipe-Gois/tech-connect",
       title: "Tech Connect",
       description: t("techconnect.descricao"),
     },
+    {
+      urlVideoApplication: "/Videos/Projects/CheckPoint/checkpoint.mp4",
+      urlDeploy: "",
+      skills: [
+        "Next.JS",
+        "TypeScript",
+        "TailWindCss",
+        "C#",
+        "WebSocket",
+        "SQL Server",
+        "Figma",
+        "Git",
+        "MongoDB",
+        "Microsoft Azure",
+        "Azure Function",
+        "Azure DevOps",
+      ],
+      image: {
+        alt: "Logo do projeto CheckPoint.",
+        src: "/Images/Projects/CheckPoint/checkpoint-logo.png",
+      },
+      title: "CheckPoint",
+      description: t("checkpoint.descricao"),
+    },
   ];
   const uniqueProjects = new Set<ProjectType>(projects);
-
   const [selectedProject, setSelectedProject] = useState<ProjectType | null>(
     null
   );
-
-  const [isOpenModal, setIsOpenModal] = useState(false);
-
-  window.innerWidth > 1024;
 
   return (
     <SectionContainer id="projects">
@@ -128,10 +144,10 @@ const Projects = () => {
                 window.innerWidth <= 1024 && index % 2 === 0
                   ? -100
                   : window.innerWidth <= 1024 && index % 2 !== 0
-                  ? 100
-                  : window.innerWidth >= 1024 && index % 2 === 0
-                  ? -500
-                  : 500,
+                    ? 100
+                    : window.innerWidth >= 1024 && index % 2 === 0
+                      ? -500
+                      : 500,
             }}
             whileInView={{ opacity: 1, x: 0 }}
             exit={{
@@ -140,10 +156,10 @@ const Projects = () => {
                 window.innerWidth < 1024 && index % 2 === 0
                   ? -100
                   : window.innerWidth < 1024 && index % 2 !== 0
-                  ? 100
-                  : window.innerWidth > 1024 && index % 2 === 0
-                  ? -500
-                  : 500,
+                    ? 100
+                    : window.innerWidth > 1024 && index % 2 === 0
+                      ? -500
+                      : 500,
             }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
             setIsOpenModal={setIsOpenModal}

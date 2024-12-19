@@ -7,7 +7,7 @@ export type ProjectType = {
   description: string;
   skills: SkillName[];
   image: ProjectImage;
-  urlRepository: string;
+  urlRepository?: string;
   urlDeploy?: string;
   urlVideoApplication: string;
   isLeftImage?: boolean;
@@ -43,6 +43,8 @@ export type SkillName =
   | "Microsoft Azure"
   | "Trello"
   | "Styled Components"
+  | "Azure Function"
+  | "WebSocket"
   | "Cypress";
 
 export type offeredServiceTitle =

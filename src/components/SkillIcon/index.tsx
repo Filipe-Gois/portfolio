@@ -12,14 +12,16 @@ import {
   SiNextdotjs,
   SiDart,
   SiTailwindcss,
-  SiCsharp,
-  SiMicrosoftsqlserver,
   SiMongodb,
-  SiMicrosoftazure,
-  SiAzuredevops,
   SiStyledcomponents,
 } from "react-icons/si";
+import { DiMsqlServer } from "react-icons/di";
+import { VscAzure } from "react-icons/vsc";
+import { VscAzureDevops } from "react-icons/vsc";
+import { TbBrandCSharp } from "react-icons/tb";
+
 import { SkillName } from "@/Types";
+import { JSX } from "react";
 
 const iconSize = 40;
 
@@ -36,12 +38,12 @@ const iconMap: Record<SkillName, JSX.Element> = {
   SASS: <FaSass size={iconSize} />,
   TailWindCss: <SiTailwindcss size={iconSize} />,
   Figma: <IoLogoFigma size={iconSize} />,
-  "C#": <SiCsharp size={iconSize} />,
-  "SQL Server": <SiMicrosoftsqlserver size={iconSize} />,
+  "C#": <TbBrandCSharp size={iconSize} />,
+  "SQL Server": <DiMsqlServer size={iconSize} />,
   MongoDB: <SiMongodb size={iconSize} />,
   Git: <FaGitAlt size={iconSize} />,
-  "Azure DevOps": <SiAzuredevops size={iconSize} />,
-  "Microsoft Azure": <SiMicrosoftazure size={iconSize} />,
+  "Azure DevOps": <VscAzureDevops size={iconSize} />,
+  "Microsoft Azure": <VscAzure size={iconSize} />,
   Trello: <FaTrello size={iconSize} />,
   "Styled Components": <SiStyledcomponents size={iconSize} />,
   Cypress: <TbBrandCypress size={iconSize} />,

@@ -8,8 +8,7 @@
   },
 
   "apresentacao": {
-    "titulo": "fefe",
-    "descricao": "Sou um desenvolvedor Full-Stack com foco em desenvolvimento mobile. Estou constantemente explorando novas linguagens e ferramentas, como o Dart e Flutter, tendo experiência também em React Native.",
+    "descricao": "Sou um desenvolvedor Full Stack apaixonado por criar soluções mobile, focando em aplicações robustas, escaláveis e intuitivas. Meu objetivo é transformar ideias em experiências digitais impactantes, sempre buscando unir design, funcionalidade e inovação.",
     "baixarcurriculo": "Baixar Currículo",
     "saopaulobrasil": "São Paulo, Brasil.",
     "disponIvelparaprojetos": "Disponível para projetos."
@@ -18,7 +17,7 @@
   "WelcomeTopic": {
     "titulo": "Sobre mim",
     "sub-titulo": "Quer saber mais sobre mim ?",
-    "descricao": "Olá! Sou Filipe Góis, um apaixonado por programação. Nascido em 2007, comecei minha trajetória no universo da tecnologia em 2023, ao me matricular no curso técnico em Desenvolvimento de Sistemas no SENAI. Essa experiência me abriu os olhos para as inúmeras possibilidades do setor e, desde então, tenho me empenhado em aprimorar minhas habilidades. Atualmente, estou fazendo a transição do desenvolvimento mobile com React Native para Flutter, sempre em busca de me atualizar e explorar novas ferramentas. Além da programação, sou um grande fã de esportes, como basquete e vôlei, e mantenho uma rotina de musculação. Meu objetivo é cursar Engenharia de Software e, futuramente, gostaria de trabalhar fora do Brasil, vivendo novas experiências e ampliando minhas oportunidades na área de tecnologia."
+    "descricao": "Sou movido pela curiosidade e pelo desejo constante de aprender. Atualmente, estou ampliando minhas habilidades com Flutter, explorando o desenvolvimento multiplataforma para criar soluções ainda mais versáteis. Com experiência em front-end e back-end, dedico-me a desenvolver projetos que conectam pessoas, resolvem problemas reais e promovem impactos positivos através da tecnologia."
   },
 
   "Skills": {
@@ -39,6 +38,9 @@
     },
     "techconnect": {
       "descricao": "O Tech Connect é uma rede social que une entusiastas da tecnologia em um espaço digital colaborativo. A plataforma facilita o compartilhamento de conhecimento, networking e desenvolvimento de projetos, conectando desenvolvedores e inovadores. Com um ambiente inclusivo, o Tech Connect promove o aprendizado contínuo e o avanço tecnológico."
+    },
+    "checkpoint": {
+      "descricao": "O Projeto Checkpoint é um sistema web que automatiza a gestão de estágios, substituindo processos manuais por uma solução eficiente e gamificada. Oferece funcionalidades como controle de frequência via login e logout, geração de relatórios em PDF e justificativas automáticas de ausência, promovendo organização e engajamento"
     }
   },
 
