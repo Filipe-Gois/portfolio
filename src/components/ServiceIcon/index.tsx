@@ -12,6 +12,7 @@ import {
   Earth,
   Hammer,
 } from "lucide-react";
+import { JSX } from "react";
 
 const iconSize = 40;
 const iconColor = `#0ACC82`;

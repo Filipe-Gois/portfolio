@@ -4,7 +4,7 @@ import "./style.css";
 type MenuMobileProps = {
   isNavbarVisible: boolean;
   setIsNavbarVisible: (isNavbarVisible: boolean) => void;
-  menuRef: RefObject<HTMLInputElement>;
+  menuRef: RefObject<HTMLInputElement | null>;
 };
 
 const MenuMobile = ({

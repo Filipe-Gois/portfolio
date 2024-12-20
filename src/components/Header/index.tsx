@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const Header = () => {
   const [isNavbarVisible, setIsNavbarVisible] = useState<boolean>(false);
 
-  const menuRef = useRef<HTMLInputElement>(null);
+  const menuRef = useRef<HTMLInputElement | null>(null);
   return (
     <motion.header
       initial={{ top: -100 }}

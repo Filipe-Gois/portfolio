@@ -9,8 +9,9 @@ import { useTranslations } from "next-intl";
 type NavBarProps = {
   isNavbarVisible: boolean;
   setIsNavbarVisible: Dispatch<SetStateAction<boolean>>;
-  menuRef: RefObject<HTMLInputElement>;
+  menuRef: RefObject<HTMLInputElement | null>;
 };
+
 
 const NavBar = ({
   isNavbarVisible,
@@ -22,7 +23,7 @@ const NavBar = ({
   const headerHeight = 96;
 
   const closeNavBar = () => {
-    if (menuRef.current) {
+    if (menuRef && menuRef.current) {
       menuRef.current.checked = false;
     }
 
