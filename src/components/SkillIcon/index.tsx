@@ -5,7 +5,7 @@ import {
 } from "react-icons/tb";
 import { IoLogoHtml5, IoLogoFigma } from "react-icons/io5";
 import { IoLogoCss3 } from "react-icons/io";
-import { FaSass, FaTrello, FaGitAlt } from "react-icons/fa";
+import { FaSass, FaTrello, FaGitAlt, FaDocker } from "react-icons/fa";
 import {
   SiTypescript,
   SiJavascript,
@@ -14,6 +14,7 @@ import {
   SiTailwindcss,
   SiMongodb,
   SiStyledcomponents,
+  SiSupabase
 } from "react-icons/si";
 import { DiMsqlServer } from "react-icons/di";
 import { VscAzure } from "react-icons/vsc";
@@ -44,6 +45,8 @@ const iconMap: Record<SkillName, JSX.Element> = {
   Git: <FaGitAlt size={iconSize} />,
   "Azure DevOps": <VscAzureDevops size={iconSize} />,
   "Microsoft Azure": <VscAzure size={iconSize} />,
+  Supabase: <SiSupabase size={iconSize} />,
+  Docker: <FaDocker size={iconSize} />,
   Trello: <FaTrello size={iconSize} />,
   "Styled Components": <SiStyledcomponents size={iconSize} />,
   Cypress: <TbBrandCypress size={iconSize} />,

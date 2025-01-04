@@ -13,27 +13,6 @@ const Projects = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
   const projects: ProjectType[] = [
     {
-      urlVideoApplication: "/Videos/Projects/FitTrack/fittrack.mp4",
-      urlRepository: "https://github.com/Filipe-Gois/FitTrack",
-      title: "FitTrack",
-      description: t("fittrack.descricao"),
-      skills: [
-        "React Native",
-        "JavaScript",
-        "Styled Components",
-        "C#",
-        "Microsoft Azure",
-        "SQL Server",
-        "Trello",
-        "Git",
-        "Figma",
-      ],
-      image: {
-        alt: "Imagem da tela de login do aplicativo móvel FitTrack.",
-        src: "/Images/Projects/FitTrack/fittrack-logo.png",
-      },
-    },
-    {
       urlVideoApplication: "/Videos/Projects/VitalHub/vitalhub.mp4",
       skills: [
         "React Native",
@@ -55,27 +34,25 @@ const Projects = () => {
       description: t("vitalhub.descricao"),
     },
     {
-      urlVideoApplication: "",
-      urlDeploy: "https://eventplusfilipe.vercel.app",
+      urlVideoApplication: "/Videos/Projects/FitTrack/fittrack.mp4",
+      urlRepository: "https://github.com/Filipe-Gois/FitTrack",
+      title: "FitTrack",
+      description: t("fittrack.descricao"),
       skills: [
-        "React.JS",
+        "React Native",
         "JavaScript",
-        "CSS3",
+        "Styled Components",
         "C#",
-        "SQL Server",
-        "Figma",
         "Microsoft Azure",
-        "Git",
+        "SQL Server",
         "Trello",
+        "Git",
+        "Figma",
       ],
       image: {
-        alt: "Logo do projeto Event Plus.",
-        src: "/Images/Projects/EventPlus/eventplus-logo.png",
-
+        alt: "Imagem da tela de login do aplicativo móvel FitTrack.",
+        src: "/Images/Projects/FitTrack/fittrack-logo.png",
       },
-      urlRepository: "https://github.com/Filipe-Gois/eventplus-finalizado",
-      title: "Event Plus",
-      description: t("eventplus.descricao"),
     },
     {
       urlVideoApplication: "/Videos/Projects/TechConnect/techconnect.mp4",
@@ -122,6 +99,29 @@ const Projects = () => {
       },
       title: "CheckPoint",
       description: t("checkpoint.descricao"),
+    },
+    {
+      urlVideoApplication: "",
+      urlDeploy: "https://eventplusfilipe.vercel.app",
+      skills: [
+        "React.JS",
+        "JavaScript",
+        "CSS3",
+        "C#",
+        "SQL Server",
+        "Figma",
+        "Microsoft Azure",
+        "Git",
+        "Trello",
+      ],
+      image: {
+        alt: "Logo do projeto Event Plus.",
+        src: "/Images/Projects/EventPlus/eventplus-logo.png",
+
+      },
+      urlRepository: "https://github.com/Filipe-Gois/eventplus-finalizado",
+      title: "Event Plus",
+      description: t("eventplus.descricao"),
     },
   ];
   const uniqueProjects = new Set<ProjectType>(projects);

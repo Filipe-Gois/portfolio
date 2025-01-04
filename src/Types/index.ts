@@ -43,6 +43,8 @@ export type SkillName =
   | "Microsoft Azure"
   | "Trello"
   | "Styled Components"
+  | "Supabase"
+  | "Docker"
   | "Cypress";
 
 export type offeredServiceTitle =

@@ -12,21 +12,19 @@ type NavBarProps = {
   menuRef: RefObject<HTMLInputElement | null>;
 };
 
-
 const NavBar = ({
   isNavbarVisible,
   setIsNavbarVisible,
   menuRef,
 }: NavBarProps) => {
   const t = useTranslations("nav");
-
+  const iconSize = 20;
   const headerHeight = 96;
 
   const closeNavBar = () => {
     if (menuRef && menuRef.current) {
       menuRef.current.checked = false;
     }
-
     setIsNavbarVisible(false);
   };
 
@@ -36,10 +34,17 @@ const NavBar = ({
       const sectionTop =
         section.getBoundingClientRect().top + window.scrollY - headerHeight;
       window.scrollTo({ top: sectionTop, behavior: "smooth" });
-
       closeNavBar();
     }
   };
+
+  const navItems = [
+    { id: "about-me", label: t("Sobre Mim"), icon: <FaUserAlt size={iconSize} /> },
+    { id: "skills", label: t("Tecnologias"), icon: <FaCode size={iconSize} /> },
+    { id: "projects", label: t("Projetos"), icon: <FaFolderOpen size={iconSize} /> },
+    { id: "services", label: t("Serviços"), icon: <FaBriefcase size={iconSize} /> },
+    { id: "contact", label: t("Contate-Me"), icon: <IoIosSend size={iconSize + 5} /> },
+  ];
 
   return (
     <nav
@@ -49,52 +54,21 @@ const NavBar = ({
       "
     >
       <ul className="h-full w-full gap-3 flex flex-col items-end px-[5%]  lg:flex-row lg:w-max lg:px-0">
-        <li className="nav-item">
-          <button
-            onClick={() => scrollToSection("about-me")}
-            className="nav-link"
-          >
-            {t("Sobre Mim")} <FaUserAlt className="lg:hidden" size={20} />
-          </button>
-        </li>
-        <li className="nav-item">
-          <button
-            onClick={() => scrollToSection("skills")}
-            className="nav-link"
-          >
-            {t("Tecnologias")} <FaCode className="lg:hidden" size={20} />
-          </button>
-        </li>
-        <li className="nav-item">
-          <button
-            onClick={() => scrollToSection("projects")}
-            className="nav-link"
-          >
-            {t("Projetos")} <FaFolderOpen className="lg:hidden" size={20} />
-          </button>
-        </li>
-        <li className="nav-item">
-          <button
-            onClick={() => scrollToSection("services")}
-            className="nav-link"
-          >
-            {t("Serviços")} <FaBriefcase className="lg:hidden" size={20} />
-          </button>
-        </li>
-        <li className="nav-item">
-          <button
-            onClick={() => scrollToSection("contact")}
-            className="nav-link"
-          >
-            {t("Contate-Me")} <IoIosSend className="lg:hidden" size={25} />
-          </button>
-        </li>
-
-        <li className="flex justify-center">
-          <ThemeToggle />
-        </li>
+        {navItems.map(({ id, label, icon }) => (
+          <li key={id} className="nav-item">
+            <button
+              onClick={() => scrollToSection(id)}
+              className="nav-link"
+            >
+              {label} <span className="lg:hidden">{icon}</span>
+            </button>
+          </li>
+        ))}
         <li className="flex justify-center items-center lg:h-full">
           <LanguageToggle />
+        </li>
+        <li className="flex justify-center">
+          <ThemeToggle />
         </li>
       </ul>
     </nav>

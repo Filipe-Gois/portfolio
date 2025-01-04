@@ -35,7 +35,7 @@ export default async function LocaleLayout({
     <html suppressHydrationWarning lang={locale === "en" ? "en" : "pt-BR"}>
       <body
         className={cn(
-          `antialiased overflow-x-hidden bg-darkScheme-primary`,
+          `antialiased overflow-x-hidden bg-lightScheme-secondary dark:bg-darkScheme-primary`,
           inter.className
         )}
       >

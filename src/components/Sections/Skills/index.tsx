@@ -20,17 +20,20 @@ const Skills = () => {
     "React.JS",
     "HTML5",
     "CSS3",
-    "SASS",
     "TailWindCss",
-    "Figma",
+    "SASS",
     "C#",
     "SQL Server",
     "MongoDB",
-    "Git",
+    "Supabase",
+    "Docker",
     "Azure DevOps",
     "Microsoft Azure",
+    "Git",
+    "Figma",
     "Cypress",
     "Trello",
+
   ];
 
   const uniqueSkills = new Set<SkillName>(skills);
