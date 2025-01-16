@@ -7,7 +7,7 @@ const businessData = {
   email: `filipeogois@gmail.com`,
   phoneNumber: `+5511911550185`,
   githubUri: `https://github.com/Filipe-Gois/`,
-  linkedinUri: `https://www.linkedin.com/in/filipe-góis/`,
+  linkedinUri: `https://www.linkedin.com/in/filipeogois/`,
 };
 
 const animation = {
