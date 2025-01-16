@@ -1,7 +1,7 @@
 {
   "nav": {
     "Sobre Mim": "About Me",
-    "Tecnologias": "Technologies",
+    "Tecnologias": "Stacks",
     "Projetos": "Projects",
     "Serviços": "Services",
     "Contate-Me": "Contact Me"
@@ -20,7 +20,7 @@
   },
 
   "Skills": {
-    "titulo": "Technologies"
+    "titulo": "Stacks"
   },
 
   "Projects": {
