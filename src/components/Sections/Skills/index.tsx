@@ -14,6 +14,8 @@ const Skills = () => {
     "Dart",
     "Flutter",
     "React Native",
+    "Firebase",
+    "Supabase",
     "JavaScript",
     "TypeScript",
     "Next.JS",
@@ -25,7 +27,6 @@ const Skills = () => {
     "C#",
     "SQL Server",
     "MongoDB",
-    "Supabase",
     "Docker",
     "Azure DevOps",
     "Microsoft Azure",
@@ -33,7 +34,6 @@ const Skills = () => {
     "Figma",
     "Cypress",
     "Trello",
-
   ];
 
   const uniqueSkills = new Set<SkillName>(skills);

@@ -3,7 +3,7 @@ import {
   TbBrandFlutter,
   TbBrandCypress,
 } from "react-icons/tb";
-import { IoLogoHtml5, IoLogoFigma } from "react-icons/io5";
+import { IoLogoHtml5, IoLogoFigma, IoLogoFirebase } from "react-icons/io5";
 import { IoLogoCss3 } from "react-icons/io";
 import { FaSass, FaTrello, FaGitAlt, FaDocker } from "react-icons/fa";
 import {
@@ -45,6 +45,7 @@ const iconMap: Record<SkillName, JSX.Element> = {
   Git: <FaGitAlt size={iconSize} />,
   "Azure DevOps": <VscAzureDevops size={iconSize} />,
   "Microsoft Azure": <VscAzure size={iconSize} />,
+  Firebase: <IoLogoFirebase size={iconSize} />,
   Supabase: <SiSupabase size={iconSize} />,
   Docker: <FaDocker size={iconSize} />,
   Trello: <FaTrello size={iconSize} />,

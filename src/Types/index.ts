@@ -45,7 +45,8 @@ export type SkillName =
   | "Styled Components"
   | "Supabase"
   | "Docker"
-  | "Cypress";
+  | "Cypress"
+  | "Firebase";
 
 export type offeredServiceTitle =
   | "Desenvolvimento de Aplicativos Móveis"
