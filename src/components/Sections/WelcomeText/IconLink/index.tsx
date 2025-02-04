@@ -11,7 +11,7 @@ type IconLinkProps = ComponentProps<typeof motion.a> & {
 
 const businessData = {
   githubUri: `https://github.com/Filipe-Gois/`,
-  linkedinUri: `https://www.linkedin.com/in/filipe-góis/`,
+  linkedinUri: `https://www.linkedin.com/in/filipeogois/`,
 };
 
 const animation = {
