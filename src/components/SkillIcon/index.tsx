@@ -29,7 +29,7 @@ const iconSize = 40;
 
 const iconMap: Record<SkillName, JSX.Element> = {
   Flutter: <TbBrandFlutter size={iconSize} />,
-  Kotlin: <SiKotlin size={iconSize * 0.95} />,
+  Kotlin: <SiKotlin size={iconSize} />,
   "React Native": <TbBrandReactNative size={iconSize} />,
   Dart: <SiDart size={iconSize} />, // Use um ícone para Dart
   TypeScript: <SiTypescript size={iconSize} />,
