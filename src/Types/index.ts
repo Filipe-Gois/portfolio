@@ -46,6 +46,7 @@ export type SkillName =
   | "Supabase"
   | "Docker"
   | "Cypress"
+  | "Kotlin"
   | "Firebase";
 
 export type offeredServiceTitle =
