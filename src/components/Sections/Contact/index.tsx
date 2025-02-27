@@ -14,7 +14,7 @@ const Contact = () => {
       <SubTitle
         transition={{ duration: 0.5 }}
         isSm
-        className="!max-w-[50%] !text-center"
+        className="md:!max-w-[50%] !max-w-[90%] text-center"
       >
         {t("sub-titulo")}
       </SubTitle>

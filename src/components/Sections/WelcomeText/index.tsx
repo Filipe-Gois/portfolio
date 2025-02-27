@@ -37,7 +37,7 @@ const WelcomeText = () => {
           whileInView={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -200 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-2 text-start"
+          className="mt-2 text-start font-normal"
         >
           {t("descricao")}
         </Paragraph>

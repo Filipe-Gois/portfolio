@@ -8,7 +8,7 @@ type ParagraphProps = ComponentProps<typeof motion.p> & {
 
 const Paragraph = ({ className, children, ...rest }: ParagraphProps) => {
   const style = tv({
-    base: "dark:text-lightScheme-tertiary text-darkScheme-primary text-justify text-sm lg:max-w-[85%] lg:text-base",
+    base: "dark:text-lightScheme-tertiary text-darkScheme-primary text-justify text-sm lg:max-w-[85%] lg:text-base font-light",
   });
   return (
     <motion.p {...rest} className={style({ className })}>

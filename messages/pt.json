@@ -49,7 +49,7 @@
     "sub-titulo": "O que posso fazer por você:",
     "mobile": {
       "titulo": "Desenvolvimento de Aplicativos Móveis",
-      "descricao": "Desenvolvo aplicativos para Android e iOS utilizando React Native, com interfaces modernas e funcionalidades eficientes."
+      "descricao": "Desenvolvo aplicativos para Android e iOS utilizando Flutter, com interfaces modernas e funcionalidades eficientes."
     },
     "web": {
       "titulo": "Criação de Sites",

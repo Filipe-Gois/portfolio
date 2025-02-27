@@ -46,11 +46,11 @@ const ProjectCard = ({
             exit={{ opacity: 0, scale: 0 }}
             transition={{ duration: 0 }}
             whileHover={{ scale: 1.25, transition: { delay: 0, duration: 0 } }}
-            className="lg:hover:scale-125 group relative transition-all ease-in-out duration-500 w-full max-h-[200px] lg:max-w-[400px] lg:max-h-[200px] "
+            className="flex justify-center lg:hover:scale-125 group relative transition-all ease-in-out duration-500 w-full max-h-[200px] lg:max-w-[400px] lg:max-h-[200px] "
           >
             <ImageComponent
               alt={project.image.alt}
-              className={`rounded-xl border-none w-full max-h-[200px] transition-transform ease-in-out duration-500`}
+              className={`rounded-xl border-none w-full max-h-[200px] max-w-[430px] transition-transform ease-in-out duration-500`}
               src={project.image.src}
             />
             {/* Darker overlay on hover */}
@@ -93,7 +93,7 @@ const ProjectCard = ({
                     : 500,
           }}
           transition={{ duration: 0.5 }}
-          className="first-letter:uppercase text-2xl lg:text-4xl"
+          className="first-letter:uppercase text-2xl lg:text-4xl font-medium"
         >
           {project.title}
         </motion.p>
@@ -122,46 +122,46 @@ const ProjectCard = ({
                     : 500,
           }}
           transition={{ duration: 0.5 }}
-          className="paragraph lg:!max-w-full mt-4"
+          className="paragraph lg:!max-w-full mt-4 font-normal"
         >
           {project.description}
         </motion.p>
 
         {/* Skills */}
-        <div className="mt-6 flex gap-2 flex-wrap">
+        <motion.div
+          initial={{
+            opacity: 0,
+            x:
+              window.innerWidth <= 1024 && project.isLeftImage
+                ? -100
+                : window.innerWidth <= 1024 && !project.isLeftImage
+                  ? 100
+                  : window.innerWidth >= 1024 && project.isLeftImage
+                    ? -500
+                    : 500,
+          }}
+          whileInView={{ opacity: 1, x: 0 }}
+          exit={{
+            opacity: 0,
+            x:
+              window.innerWidth <= 1024 && project.isLeftImage
+                ? -100
+                : window.innerWidth <= 1024 && !project.isLeftImage
+                  ? 100
+                  : window.innerWidth >= 1024 && project.isLeftImage
+                    ? -500
+                    : 500,
+          }}
+          transition={{ duration: 0.5 }}
+          className="mt-6 flex gap-2 flex-wrap">
           {Array.from(uniqueSkills).map((skill, index) => (
-            <motion.span
-              initial={{
-                opacity: 0,
-                x:
-                  window.innerWidth <= 1024 && project.isLeftImage
-                    ? -100
-                    : window.innerWidth <= 1024 && !project.isLeftImage
-                      ? 100
-                      : window.innerWidth >= 1024 && project.isLeftImage
-                        ? -200
-                        : 200,
-              }}
-              whileInView={{ opacity: 1, x: 0 }}
-              exit={{
-                opacity: 0,
-                x:
-                  window.innerWidth <= 1024 && project.isLeftImage
-                    ? -100
-                    : window.innerWidth <= 1024 && !project.isLeftImage
-                      ? 100
-                      : window.innerWidth >= 1024 && project.isLeftImage
-                        ? -200
-                        : 200,
-              }}
-              transition={{ duration: 0.3, delay: index * 0.1 }}
-              className="px-2 py-1 bg-complementary-gray/50 dark:bg-lightScheme-tertiary/50 rounded-full"
+            <span className="px-2 py-1 bg-darkScheme-tertiary !bg-opacity-10 dark:bg-lightScheme-tertiary/50 rounded-full font-light"
               key={index}
             >
               {skill}
-            </motion.span>
+            </span>
           ))}
-        </div>
+        </motion.div>
 
         {/* Links */}
         <div className="flex items-center gap-3 mt-6">
@@ -205,11 +205,11 @@ export const ServiceCard = ({ service }: { service: offeredService }) => {
   return (
     <div className="w-11/12 lg:w-4/5 h-[400px] lg:h-[400px] xl:h-[350px] bg-white dark:bg-complementary-blackv2 rounded-xl p-5 flex flex-col items-center justify-around text-xl transition-all ease-in-out duration-500 lg:hover:scale-110 !cursor-pointer shadow-custom">
       <ServiceIcon icon={service.title} />
-      <p className="justify-center text-center text-complementary-lightGreen">
+      <p className="justify-center text-center text-complementary-lightGreen font-semibold">
         {service.title}
       </p>
 
-      <p className="paragraph !text-center">{service.description}</p>
+      <p className="paragraph font-normal !text-center">{service.description}</p>
     </div>
   );
 };

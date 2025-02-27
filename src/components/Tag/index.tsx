@@ -13,7 +13,8 @@ const Tag = ({ title, ...rest }: TagProps) => {
       whileInView={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -100 }}
       transition={{ duration: 0.5, delay: 0.2 }}
-      className="px-2 py-1 bg-complementary-gray/50 dark:bg-lightScheme-tertiary/50 rounded-full"
+      className="px-2 py-1 font-bold bg-darkScheme-tertiary !bg-opacity-30 dark:bg-lightScheme-tertiary/50 rounded-full
+      text-darkScheme-primary dark:text-lightScheme-primary"
       id={title}
     >
       {title}

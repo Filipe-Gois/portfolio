@@ -9,7 +9,7 @@ type SubTitleProps = ComponentProps<typeof motion.h2> & {
 
 const SubTitle = ({ className, isSm, children, ...rest }: SubTitleProps) => {
   const style = tv({
-    base: "dark:text-lightScheme-primary text-darkScheme-primary text-2xl lg:text-4xl",
+    base: "dark:text-lightScheme-primary text-darkScheme-primary text-2xl lg:text-4xl font-medium",
     variants: {
       isSm: {
         true: "mt-8 dark:text-lightScheme-tertiary text-justify text-sm lg:max-w-[85%] lg:text-base",

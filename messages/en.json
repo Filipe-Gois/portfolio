@@ -51,7 +51,7 @@
 
     "mobile": {
       "titulo": "Mobile App Development",
-      "descricao": "I develop applications for Android and iOS using React Native, with modern interfaces and efficient functionalities."
+      "descricao": "I develop applications for Android and iOS using Flutter, with modern interfaces and efficient functionalities."
     },
     "web": {
       "titulo": "Website Creation",

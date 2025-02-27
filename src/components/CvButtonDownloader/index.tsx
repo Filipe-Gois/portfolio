@@ -16,7 +16,8 @@ const CvButtonDownloader = () => {
       href="/Documents/curriculo_filipe_gois.pdf"
       download="curriculo_filipe_gois.pdf"
     >
-      <button className="flex gap-2 hover:!bg-complementary-lightGreen hover-animation items-center rounded text-lightScheme-primary dark:text-darkScheme-primary bg-darkScheme-primary dark:bg-lightScheme-primary p-2 relative">
+      <button className="flex gap-2 hover:!bg-complementary-lightGreen hover-animation items-center rounded text-lightScheme-primary dark:text-darkScheme-primary 
+      font-semibold bg-darkScheme-primary dark:bg-lightScheme-primary p-2 relative">
         <Download /> {t("baixarcurriculo")}
       </button>
     </motion.a>

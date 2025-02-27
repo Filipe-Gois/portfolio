@@ -129,6 +129,33 @@ const Projects = () => {
     null
   );
 
+  const exit = (index: number) => {
+    return {
+      opacity: 0,
+      x:
+        window.innerWidth < 1024 && index % 2 === 0
+          ? -100
+          : window.innerWidth < 1024 && index % 2 !== 0
+            ? 100
+            : window.innerWidth > 1024 && index % 2 === 0
+              ? -500
+              : 500,
+    }
+  };
+  const initial = (index: number) => {
+    return {
+      opacity: 0,
+      x:
+        window.innerWidth <= 1024 && index % 2 === 0
+          ? -100
+          : window.innerWidth <= 1024 && index % 2 !== 0
+            ? 100
+            : window.innerWidth >= 1024 && index % 2 === 0
+              ? -500
+              : 500,
+    }
+  };
+
   return (
     <SectionContainer id="projects">
       <Tag title={t("titulo")} />
@@ -138,29 +165,9 @@ const Projects = () => {
       <div className="mt-16 flex flex-col gap-10">
         {Array.from(uniqueProjects).map((project, index) => (
           <ProjectCard
-            initial={{
-              opacity: 0,
-              x:
-                window.innerWidth <= 1024 && index % 2 === 0
-                  ? -100
-                  : window.innerWidth <= 1024 && index % 2 !== 0
-                    ? 100
-                    : window.innerWidth >= 1024 && index % 2 === 0
-                      ? -500
-                      : 500,
-            }}
+            initial={initial(index)}
             whileInView={{ opacity: 1, x: 0 }}
-            exit={{
-              opacity: 0,
-              x:
-                window.innerWidth < 1024 && index % 2 === 0
-                  ? -100
-                  : window.innerWidth < 1024 && index % 2 !== 0
-                    ? 100
-                    : window.innerWidth > 1024 && index % 2 === 0
-                      ? -500
-                      : 500,
-            }}
+            exit={exit(index)}
             transition={{ duration: 0.5, delay: index * 0.1 }}
             setIsOpenModal={setIsOpenModal}
             setSelectedProject={setSelectedProject}

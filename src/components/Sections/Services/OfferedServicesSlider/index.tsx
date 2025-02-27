@@ -63,7 +63,6 @@ const OfferedServicesSlider = () => {
     autoplay: {
       delay: 5000,
     },
-    navigation: true,
     pagination: {
       clickable: true,
       dynamicBullets: true,

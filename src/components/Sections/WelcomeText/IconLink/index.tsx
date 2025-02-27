@@ -66,7 +66,8 @@ export const LocationInfoContainer = () => {
       <motion.label
         {...animation}
         transition={{ duration: 0.5, delay: 0.4 }}
-        className="text-darkScheme-primary dark:text-lightScheme-primary flex gap-1 items-center text-sm lg:text-base"
+        className="text-darkScheme-primary 
+        font-medium dark:text-lightScheme-primary flex gap-1 items-center text-sm lg:text-base"
       >
         <MapPin size={18} />
         {t("saopaulobrasil")}
@@ -74,7 +75,7 @@ export const LocationInfoContainer = () => {
       <motion.label
         {...animation}
         transition={{ duration: 1.1, delay: 0.1 }}
-        className="text-darkScheme-primary dark:text-lightScheme-primary flex gap-1 items-center text-sm lg:text-base"
+        className="font-medium text-darkScheme-primary dark:text-lightScheme-primary flex gap-1 items-center text-sm lg:text-base"
       >
         <span className="w-1 h-1 bg-complementary-darkGreen rounded ml-[0.375rem] " />
         {t("disponIvelparaprojetos")}
