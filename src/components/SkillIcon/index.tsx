@@ -15,6 +15,7 @@ import {
   SiMongodb,
   SiStyledcomponents,
   SiKotlin,
+  SiGooglecloud,
   SiSupabase
 } from "react-icons/si";
 import { DiMsqlServer } from "react-icons/di";
@@ -53,6 +54,7 @@ const iconMap: Record<SkillName, JSX.Element> = {
   Trello: <FaTrello size={iconSize} />,
   "Styled Components": <SiStyledcomponents size={iconSize} />,
   Cypress: <TbBrandCypress size={iconSize} />,
+  "Google Cloud Platform": < SiGooglecloud size={iconSize} />
 };
 
 type SkillIconProps = {

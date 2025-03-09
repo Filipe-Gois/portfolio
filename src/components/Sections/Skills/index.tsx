@@ -31,6 +31,7 @@ const Skills = () => {
     "Docker",
     "Azure DevOps",
     "Microsoft Azure",
+    "Google Cloud Platform",
     "Git",
     "Figma",
     "Cypress",
