@@ -16,13 +16,13 @@ import {
   SiStyledcomponents,
   SiKotlin,
   SiGooglecloud,
-  SiSupabase
+  SiSupabase,
+  SiJetpackcompose
 } from "react-icons/si";
 import { DiMsqlServer } from "react-icons/di";
 import { VscAzure } from "react-icons/vsc";
 import { VscAzureDevops } from "react-icons/vsc";
 import { TbBrandCSharp } from "react-icons/tb";
-
 import { SkillName } from "@/Types";
 import { JSX } from "react";
 
@@ -30,6 +30,7 @@ const iconSize = 40;
 
 const iconMap: Record<SkillName, JSX.Element> = {
   Flutter: <TbBrandFlutter size={iconSize} />,
+  "Jetpack Compose": <SiJetpackcompose size={iconSize} />,
   Kotlin: <SiKotlin size={iconSize} />,
   "React Native": <TbBrandReactNative size={iconSize} />,
   Dart: <SiDart size={iconSize} />, // Use um ícone para Dart

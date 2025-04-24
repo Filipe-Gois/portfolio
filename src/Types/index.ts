@@ -23,6 +23,7 @@ export type ImageType = {
 };
 
 export type SkillName =
+  | "Jetpack Compose"
   | "Flutter"
   | "React Native"
   | "Dart"

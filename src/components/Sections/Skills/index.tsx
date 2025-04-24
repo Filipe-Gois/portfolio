@@ -13,6 +13,7 @@ const Skills = () => {
   const skills: SkillName[] = [
     "Dart",
     "Flutter",
+    "Jetpack Compose",
     "Kotlin",
     "React Native",
     "Firebase",
