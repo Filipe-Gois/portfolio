@@ -17,7 +17,7 @@
   "WelcomeTopic": {
     "titulo": "Sobre mim",
     "sub-titulo": "Quer saber mais sobre mim ?",
-    "descricao": "Sou movido pela curiosidade e pelo desejo constante de aprender. Atualmente, estou ampliando minhas habilidades com Flutter, explorando o desenvolvimento multiplataforma para criar soluções ainda mais versáteis. Com experiência em front-end e back-end, dedico-me a desenvolver projetos que conectam pessoas, resolvem problemas reais e promovem impactos positivos através da tecnologia."
+    "descricao": "Sou movido pela curiosidade e pelo desejo constante de aprender. Após consolidar meus conhecimentos em Flutter, venho explorando o desenvolvimento nativo mobile, utilizando Kotlin com Jetpack Compose para Android e Swift para iOS. Com experiência em front-end e back-end, dedico-me a criar projetos que conectam pessoas, resolvem problemas reais e promovem impactos positivos por meio da tecnologia."
   },
 
   "Skills": {
@@ -69,7 +69,7 @@
     },
     "design": {
       "titulo": "Design de Interfaces Responsivas",
-      "descricao": "Crio interfaces intuitivas e responsivas com React, Next.js e Tailwind CSS, que se adaptam perfeitamente a qualquer dispositivo."
+      "descricao": "Crio interfaces intuitivas e responsivas com Next.js e Tailwind CSS, que se adaptam perfeitamente a qualquer dispositivo."
     },
     "devops": {
       "titulo": "Soluções de DevOps",
@@ -85,7 +85,7 @@
     },
     "fullstack": {
       "titulo": "Desenvolvimento Full-Stack",
-      "descricao": "Crio aplicações completas, desde o front-end até o back-end, utilizando tecnologias como React, C#, MongoDB, e SQL Server."
+      "descricao": "Crio aplicações completas, desde o front-end até o back-end, utilizando tecnologias como Next.js, C#, MongoDB, e SQL Server."
     },
     "support": {
       "titulo": "Manutenção e Suporte Técnico",
